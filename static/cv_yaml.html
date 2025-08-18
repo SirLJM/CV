@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!--suppress JSUnresolvedReference -->
 <html lang="en">
 
 <head>
     <title>Łukasz Wiśniewski</title>
+
     <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
     <link rel="stylesheet" href="styles/cv.css">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Lukasz Wisniewski">
@@ -13,7 +17,7 @@
 
 <body>
 
-<div style="position: fixed; top: 10px; right: 10px;">
+<div class="button" style="position: fixed; top: 10px; right: 10px;">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('pl')">Polski</button>
 </div>
@@ -30,7 +34,7 @@
         try {
             const response = await fetch('content.yaml');
             const yamlText = await response.text();
-            cvData = jsyaml.load(yamlText);
+            cvData = jsYaml.load(yamlText);
             renderCV();
         } catch (error) {
             console.error('Error loading content:', error);

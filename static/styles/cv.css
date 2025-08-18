@@ -416,6 +416,10 @@ ul {
     .fas.fa-envelope:before { content: "\f0e0"; }
     .fab.fa-linkedin:before { content: "\f08c"; }
 
+    .button {
+        display: none;
+    }
+
     .phoneNumber {
         display: inline;
     }

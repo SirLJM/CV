@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-CV PDF Generator
-Converts your dynamic HTML CV to PDF format for both English and Polish versions.
-"""
 
 import asyncio
 import subprocess
@@ -15,6 +11,7 @@ import socketserver
 from pathlib import Path
 from playwright.async_api import async_playwright
 
+# noinspection PyTypeChecker
 class CVPDFGenerator:
     def __init__(self, cv_folder="./static/", port=8000):
         self.cv_folder = Path(cv_folder).resolve()
@@ -26,7 +23,7 @@ class CVPDFGenerator:
         os.chdir(self.cv_folder)
 
         class QuietHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-            def log_message(self, format, *args):
+            def log_message(self, param, *args):
                 pass  # Suppress server logs
 
         self.httpd = socketserver.TCPServer(("", self.port), QuietHTTPRequestHandler)
@@ -96,7 +93,6 @@ class CVPDFGenerator:
     async def run(self):
         print("🚀 CV PDF Generator Starting...")
 
-        # Check if CV files exist
         if not (self.cv_folder / "cv_yaml.html").exists():
             print("❌ Error: cv_yaml.html not found in current directory")
             return
@@ -143,6 +139,7 @@ def generate_pdf_weasyprint(language="en", output_file=None):
     print(f"✓ PDF generated with WeasyPrint: {output_file}")
 
 # TODO add rest of html content to static html
+# noinspection PyUnusedLocal
 def create_static_html(data, template):
     static_content = f"""
     <!DOCTYPE html>
