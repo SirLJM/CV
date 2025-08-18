@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Łukasz Wiśniewski</title>
+    <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <link rel="stylesheet" href="styles/cv.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lukasz Wisniewski">
+</head>
+
+<body>
+
+<div style="position: fixed; top: 10px; right: 10px;">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('pl')">Polski</button>
+</div>
+
+<div id="cv-container">
+    <!-- Content will be dynamically loaded here -->
+</div>
+
+<script>
+    let currentLang = 'en';
+    let cvData = null;
+
+    // Function to load YAML content
+    async function loadContent() {
+        try {
+            const response = await fetch('content.yaml');
+            const yamlText = await response.text();
+            cvData = jsyaml.load(yamlText);
+            renderCV();
+        } catch (error) {
+            console.error('Error loading content:', error);
+            document.getElementById('cv-container').innerHTML = '<p>Error loading CV content. Please check that content.yaml is available.</p>';
+        }
+    }
+
+    // Function to render the CV
+    function renderCV() {
+        if (!cvData) return;
+
+        const data = cvData[currentLang];
+        const container = document.getElementById('cv-container');
+
+        container.innerHTML = `
+        <div id="cv">
+            <section id="header">
+                <div id="name-container">
+                    <img id="profile-picture" src="CV_1024x1024.png" alt="profile-picture"/>
+                    <span id="name">${data.name}</span>
+                </div>
+                <div id="intro">
+                    <span>${data.intro}</span>
+                </div>
+            </section>
+
+            <section id="contact">
+                <a class="phoneNumber" href="tel:${data.contact.phone}">
+                    <span class="fas fa-phone icon"></span><span>${data.contact.phone}</span>
+                </a>
+                <a href="mailto:${data.contact.email}">
+                    <span class="fas fa-envelope icon"></span><span>${data.contact.email}</span>
+                </a>
+                <a href="${data.contact.linkedin}">
+                    <span class="fab fa-linkedin icon"></span><span>linkedin.com/in/lukasz0wisniewski</span>
+                </a>
+            </section>
+
+            <h1>${data.labels.experience}</h1>
+            <section id="experience" class="section-experience">
+                ${renderExperience(data.experience)}
+            </section>
+
+            <h1>${data.labels.skills}</h1>
+            <div class="section-large" id="technology-list">
+                ${renderSkills(data.skills)}
+            </div>
+            <div id="technology-other">
+                ${data.skills_other}
+            </div>
+
+            <section id="education" class="two-sections">
+                <div>
+                    <h1>${data.labels.education}</h1>
+                    <section class="section-small">
+                        ${renderEducation(data.education)}
+                    </section>
+                </div>
+                <div>
+                    <h1>${data.labels.language}</h1>
+                    <section class="section-small">
+                        ${renderLanguages(data.languages)}
+                    </section>
+                </div>
+            </section>
+
+            <h1 id="work-projects">${data.labels.projects}</h1>
+            ${renderProjects(data.projects)}
+        </div>
+    `;
+    }
+
+    function renderExperience(experiences) {
+        return experiences.map(exp => `
+        <div class="experience-year">${exp.years}</div>
+        <div>
+            <span class="experience-position">${exp.position}</span><br/>
+            ${exp.company ? `<span class="experience-company">${exp.company}</span><br/>` : ''}
+            ${exp.details.length === 1 && !exp.details[0].includes('•') ?
+            exp.details[0] :
+            `<ul>${exp.details.map(detail => `<li>${detail}</li>`).join('')}</ul>`
+        }
+        </div>
+    `).join('');
+    }
+
+    function renderSkills(skills) {
+        return skills.map(skill => `
+        <span class="technology-name">${skill.name}</span>
+        <span class="technology-description">${skill.description}</span>
+    `).join('');
+    }
+
+    function renderEducation(education) {
+        return education.map(edu => `
+        <div class="education-year">${edu.year}</div>
+        <div>
+            <span class="education-detail">${edu.detail}</span><br/>
+            <span class="education-org">${edu.org}</span><br/>
+        </div>
+    `).join('');
+    }
+
+    function renderLanguages(languages) {
+        return languages.map(lang => `
+        <span class="language-name">${lang.name}</span>
+        <span>${lang.level}</span>
+    `).join('');
+    }
+
+    function renderProjects(projects) {
+        return projects.map(project => `
+        <h2 class="workproject-heading">${project.years} ${project.title}</h2>
+        <div class="workproject-intro">
+            ${project.intro}
+        </div>
+        <div class="workproject-details">
+            <strong>${cvData[currentLang].labels.position}</strong>
+            <div>${project.position}</div>
+            <strong>${cvData[currentLang].labels.technology}</strong>
+            <div>${project.technology}</div>
+            <strong>${cvData[currentLang].labels.role}</strong>
+            <div>${project.role}</div>
+        </div>
+    `).join('');
+    }
+
+    function switchLang(lang) {
+        currentLang = lang;
+        renderCV();
+    }
+
+    document.addEventListener('DOMContentLoaded', loadContent);
+</script>
+
+</body>
+</html>
