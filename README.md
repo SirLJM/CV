@@ -1,0 +1,1 @@
+This is my CV done in html and css with python script for generating pdf.

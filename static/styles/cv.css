@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800');
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+:root {
+    --body-font-family: "Open Sans";
+    --heading-font-family: "Lora";
+    --heading-font-weight: 800;
+    --strong-font-weight: 700;
+    --highlight-color: #235dcf;
+}
+
+body {
+    background-color: lightsteelblue;
+    font-family: var(--body-font-family), sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--heading-font-family), sans-serif;
+    font-weight: var(--heading-font-weight);
+    color: var(--highlight-color);
+    border-bottom: 0.1rem solid;
+    margin-block-end: 0.52em;
+    padding-bottom: 0.15em;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: var(--heading-font-family), sans-serif;
+    font-weight: var(--heading-font-weight);
+    color: var(--highlight-color);
+    margin-block-end: 0.52em;
+    padding-bottom: 0.15em;
+}
+
+a:link,
+a:visited {
+    color: var(--highlight-color);
+}
+
+ul {
+    margin-top: 0;
+    padding-left: 1.2rem;
+}
+
+#cv {
+    box-sizing: border-box;
+    max-width: 62rem;
+    padding: 2.5rem;
+    margin: 3rem auto;
+    background-color: white;
+    box-shadow: 0 0 4px hsl(0deg 0% 0% / 0.1),
+    0 0 8px hsl(0deg 0% 0% / 0.1),
+    0 0 16px hsl(0deg 0% 0% / 0.1),
+    0 0 32px hsl(0deg 0% 0% / 0.1),
+    0 0 64px hsl(0deg 0% 0% / 0.1);
+}
+
+.icon {
+    color: var(--highlight-color);
+    width: 1.8rem !important;
+}
+
+.fas, .fa {
+    font-family: "Font Awesome 6 Free", sans-serif !important;
+    font-weight: 900 !important;
+}
+
+.fab {
+    font-family: "Font Awesome 6 Brands", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+
+#name-container {
+    position: relative;
+}
+
+#profile-picture {
+    border: 3px solid #235dcf;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    display: block;
+}
+
+#name {
+    position: absolute;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: var(--heading-font-family), sans-serif;
+    font-weight: var(--heading-font-weight);
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#intro {
+    padding-left: 2rem;
+    text-wrap: pretty;
+    border-left: 0.5rem solid;
+    border-color: var(--highlight-color);
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#contact {
+    /* Without phone number: */
+    grid-template-columns: auto auto auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    justify-content: space-between;
+}
+
+#contact > a > span {
+    text-decoration: underline;
+    margin-left: 0.5rem;
+}
+
+#contact > a:link,
+#contact > a:visited {
+    color: inherit;
+}
+
+#contact > a:hover {
+    color: var(--highlight-color);
+}
+
+/* Hide the phone number from the web version. */
+.phoneNumber {
+    display: none;
+}
+
+.section-experience {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    row-gap: 1rem;
+}
+
+.section-large {
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+#experience {
+    row-gap: 0.7rem;
+}
+
+#experience > div > ul {
+    margin-bottom: 0;
+}
+
+.experience-year {
+    font-weight: var(--strong-font-weight);
+}
+
+.experience-position {
+    font-weight: var(--strong-font-weight);
+    color: var(--highlight-color);
+}
+
+.experience-company {
+    font-weight: var(--strong-font-weight);
+}
+
+#technology-list {
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.technology-name {
+    font-weight: 600;
+}
+
+.technology-description {
+    align-self: center;
+    text-wrap: pretty;
+}
+
+#technology-other {
+    font-weight: 600;
+    text-wrap: balance;
+}
+
+.two-sections {
+    display: grid;
+    grid-template-columns: 3fr 2.5fr;
+    column-gap: 2rem;
+}
+
+.section-small {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.presenting-type {
+    font-weight: 600;
+}
+
+.project-name {
+    font-weight: 600;
+    text-decoration: underline !important;
+}
+
+.project-name:link,
+.project-name:visited {
+    color: inherit;
+}
+
+.project-name:hover {
+    color: var(--highlight-color);
+}
+
+.education-year {
+    font-weight: var(--strong-font-weight);
+}
+
+.education-detail {
+    font-weight: var(--strong-font-weight);
+    color: var(--highlight-color)
+}
+
+.language-name {
+    font-weight: 600;
+}
+
+.workproject-heading {
+    margin-top: 2rem;
+}
+
+.workproject-intro {
+    margin-bottom: 0.7rem;
+}
+
+.workproject-details {
+    margin-bottom: 0.7rem;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+#pageHeader {
+    display: none;
+    grid-template-columns: auto 1fr;
+    justify-items: right;
+}
+
+#pageHeaderName {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-family: var(--heading-font-family), sans-serif;
+    font-weight: var(--heading-font-weight);
+    color: var(--highlight-color);
+}
+
+#pageHeader > div > a {
+    margin-left: 0.6rem;
+}
+
+#pageHeader > div > a > span {
+    text-decoration: underline;
+    margin-left: 0.2rem;
+}
+
+#pageHeader > div > a:link,
+#pageHeader > div > a:visited {
+    color: inherit;
+}
+
+/* Hide the background with the drop shadow, and adjust the padding. */
+@media screen and (max-width: 65rem) {
+    body {
+        background-color: white;
+    }
+
+    #cv {
+        padding: 2rem;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+}
+
+/* Switch to one-column view (mobile) */
+@media screen and (max-width: 50rem) {
+    .two-sections {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 column */
+        column-gap: 0;
+    }
+
+    #cv {
+        padding: 1rem; /* Decrease the padding */
+    }
+
+    #experience {
+        grid-template-columns: 6rem 1fr;
+    }
+}
+
+/* Switch the name and intro to be underneath each other */
+@media screen and (max-width: 45rem) {
+    #header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #name {
+        margin: 0 auto 1rem auto;
+    }
+
+    #intro {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    /* Switch the contact to be single column. */
+    #contact {
+        grid-template-columns: auto;
+        row-gap: 1rem;
+        justify-content: left;
+        margin-top: 1rem;
+    }
+}
+
+/* Override the styling for printing to be able to save as PDF */
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        background-color: white !important;
+        box-shadow: none !important;
+    }
+
+    html {
+        /*font-size: 8.2pt;*/
+        font-size: 9pt;
+    }
+
+    #header {
+        margin-top: 3.7rem;
+    }
+
+    #pageHeader {
+        display: grid;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    #cv {
+        padding: 0 1.2cm 0 1.2cm;
+        margin: 0;
+        max-width: none;
+        background-color: white !important;
+        box-shadow: none !important;
+    }
+
+    #education {
+        break-after: page;
+    }
+
+    #experience {
+        break-after: page;
+    }
+
+    /* Show the phone number: */
+    #contact {
+        grid-template-columns: auto auto auto;
+    }
+
+    .icon, .fa, .fas {
+        font-family: "Font Awesome 6 Free", sans-serif !important;
+        font-weight: 900 !important;
+        display: inline !important;
+        visibility: visible !important;
+    }
+
+    .fab {
+        font-family: "Font Awesome 6 Brands", sans-serif !important;
+        font-weight: 400 !important;
+        display: inline !important;
+        visibility: visible !important;
+    }
+
+    .fas.fa-phone:before { content: "\f095"; }
+    .fas.fa-envelope:before { content: "\f0e0"; }
+    .fab.fa-linkedin:before { content: "\f08c"; }
+
+    .phoneNumber {
+        display: inline;
+    }
+
+}
