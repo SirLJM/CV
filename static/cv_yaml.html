@@ -26,7 +26,6 @@
     let currentLang = 'en';
     let cvData = null;
 
-    // Function to load YAML content
     async function loadContent() {
         try {
             const response = await fetch('content.yaml');
@@ -39,7 +38,6 @@
         }
     }
 
-    // Function to render the CV
     function renderCV() {
         if (!cvData) return;
 
@@ -50,7 +48,7 @@
         <div id="cv">
             <section id="header">
                 <div id="name-container">
-                    <img id="profile-picture" src="CV_1024x1024.png" alt="profile-picture"/>
+                    <img id="profile-picture" src="images/CV_1024x1024.png" alt="profile-picture"/>
                     <span id="name">${data.name}</span>
                 </div>
                 <div id="intro">

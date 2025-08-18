@@ -140,7 +140,7 @@ en:
 pl:
   name: "Łukasz Wiśniewski"
   intro: >
-    Kierownik Projektów z ponad 5-letnim doświadczeniem w IT i inżynierii,
+    Kierownik Projektu z ponad 5-letnim doświadczeniem w IT i inżynierii,
     łączący zaplecze techniczne (Java, Agile) z silnymi kompetencjami przywódczymi
     w dostarczaniu złożonych projektów. Udowodniona umiejętność łączenia zespołów,
     interesariuszy i celów biznesowych dzięki metodycznemu podejściu (PMI, Scrum)
@@ -171,7 +171,7 @@ pl:
       company: "EPAM Systems"
       details:
         - "Rozwój backendu dla mikroserwisów medycznych, co przyczyniło się do 30% szybszego cyklu wdrożeń dzięki usprawnieniom Agile."
-        - "Współpraca w międzynarodowym zespole Scrum, rozwiązując ponad 15 blokad sprintów poprzez przewidywanie ryzyk."
+        - "Współpraca w międzynarodowym zespole Scrum, rozwiązanie ponad 15 blokad sprintów poprzez przewidywanie ryzyk."
     - years: "2021–2022"
       position: "Młodszy Inżynier Oprogramowania Java"
       company: "EPAM Systems"
@@ -196,9 +196,9 @@ pl:
       position: "Kierownik Projektów"
       company: "Coveris Rigid Poland"
       details:
-        - "Utworzenie ram PMO, standaryzacja przepływów pracy dla 5+ zespołów, co zmniejszyło opóźnienia projektów o 25%."
-        - "Prowadzenie projektu inwestycyjnego o wartości ponad 500 tys. USD od inicjacji do realizacji, koordynując inżynierów i interesariuszy."
-        - "Przeszkolenie 15+ pracowników z metodologii PM, poprawiając współpracę między działami."
+        - "Utworzenie ram PMO, standaryzacja przepływów pracy dla ponad pięciu zespołów, co zmniejszyło opóźnienia projektów o 25%."
+        - "Prowadzenie projektu inwestycyjnego o wartości ponad 500 tys. dolarów od inicjacji do realizacji, koordynując inżynierów i interesariuszy."
+        - "Przeszkolenie piętnastu pracowników z metodologii PM, poprawiając współpracę między działami."
     - years: "2015–2016"
       position: "Specjalista ds. Rozwoju Nowych Produktów"
       company: "Coveris Rigid Poland"
