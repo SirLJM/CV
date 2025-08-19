@@ -164,8 +164,8 @@ pl:
       position: "Przerwa zawodowa – obowiązki rodzinne"
       company: null
       details:
-        - "Skupiłem się na pełnoetatowym wspieraniu rodziny w tym okresie."
-        - "Gotowy do powrotu na rynek pracy z nową energią i motywacją."
+        - "Skupienie się na pełnoetatowym wspieraniu rodziny w tym okresie."
+        - "Gotowość do powrotu na rynek pracy z nową energią i motywacją."
     - years: "2022–2023"
       position: "Inżynier Oprogramowania Java"
       company: "EPAM Systems"
@@ -177,7 +177,7 @@ pl:
       company: "EPAM Systems"
       details:
         - "Wybrany do inauguracyjnej edycji intensywnego programu mentoringowego, którego celem było podniesienie umiejętności juniorów do poziomu mid."
-        - "Realizacja projektów praktycznych w Javie, rozwijających umiejętności rozwiązywania problemów i programowania."
+        - "Realizacja projektów praktycznych w Javie, rozwijających umiejętności rozwiązywania </br>problemów i programowania."
         - "Praca pod okiem starszych programistów nad architekturą, code review i debugowaniem."
     - years: "2020–2021"
       position: "Młodszy Programista Java"
@@ -185,30 +185,30 @@ pl:
       details:
         - "Praca nad aplikacją webową do zarządzania obiegiem dokumentów."
         - "Dodawanie nowych funkcji na podstawie wymagań klientów."
-        - "W 12-osobowym zespole analizowałem i usuwałem błędy."
+        - "Analiza i usuwanie błędów w 12-osobowym zespole."
     - years: "2017–2020"
       position: "Przerwa zawodowa – rekonwalescencja"
       company: null
       details:
-        - "Skupiłem się na leczeniu i powrocie do zdrowia po poważnych problemach zdrowotnych."
-        - "Rozwinąłem odporność, cierpliwość i koncentrację."
+        - "Skupienie się na leczeniu i powrocie do zdrowia po poważnych problemach zdrowotnych."
+        - "Rozwinięcie cierpliwości i koncentracji."
     - years: "2016–2017"
       position: "Kierownik Projektów"
       company: "Coveris Rigid Poland"
       details:
-        - "Utworzenie ram PMO, standaryzacja przepływów pracy dla ponad pięciu zespołów, co zmniejszyło opóźnienia projektów o 25%."
-        - "Prowadzenie projektu inwestycyjnego o wartości ponad 500 tys. dolarów od inicjacji do realizacji, koordynując inżynierów i interesariuszy."
-        - "Przeszkolenie piętnastu pracowników z metodologii PM, poprawiając współpracę między działami."
+        - "Utworzenie ram PMO, standaryzacja przepływów pracy dla ponad pięciu zespołów, zmniejszenie opóźnienia projektów o 25%."
+        - "Prowadzenie projektu inwestycyjnego o wartości ponad 500 tyś. dolarów od inicjacji do realizacji, koordynacja inżynierów i interesariuszy."
+        - "Przeszkolenie piętnastu pracowników z metodologii PM, poprawa współpracy między działami."
     - years: "2015–2016"
       position: "Specjalista ds. Rozwoju Nowych Produktów"
       company: "Coveris Rigid Poland"
       details:
-        - "Współpraca z zespołem sprzedaży i klientami przy wprowadzaniu nowych produktów na rynek."
-        - "Ścisła współpraca z działem produkcji i jakości w celu zapewnienia wysokiej jakości produktów."
-        - "Kontrola linii produkcyjnych klienta, aby zapewnić płynne wdrożenie nowych projektów."
+        - "Współpraca z zespołem sprzedaży i klientami, wprowadzenie nowych produktów na rynek."
+        - "Ścisła koordynacja z działem produkcji i jakości, zapewnienie wysokiej jakości produktów."
+        - "Kontrola linii produkcyjnych klienta, płynne wdrożenie nowych projektów."
   skills:
     - name: "Agile & Scrum Project Management | Metodyki PMI"
-      description: "Prowadzenie i szkolenie z zarządzania projektami w środowisku międzynarodowym."
+      description: "Prowadzenie i szkolenie z zarządzania projektami </br> w środowisku międzynarodowym."
     - name: "Zarządzanie interesariuszami i współpraca międzydziałowa"
       description: "Zarządzanie oczekiwaniami interesariuszy i organizowanie współpracy między działami."
     - name: "Zarządzanie ryzykiem i strategie ograniczania ryzyka"
@@ -251,7 +251,7 @@ pl:
       technology: "Java, Kubernetes, Azure"
       intro: "Integracja systemów technicznych mikroserwisowej aplikacji do monitorowania zdrowia i aktywności opiekunów."
       role: >
-        Byłem częścią międzynarodowego, wielofunkcyjnego zespołu dostarczającego klientowi szybko wdrażaną i prototypowaną aplikację,
+        Byłem częścią międzynarodowego, wielofunkcyjnego zespołu dostarczającego klientowi szybko wdrażaną </br> i prototypowaną aplikację,
         mającą zrewolucjonizować rynek opieki w USA. Pracowałem głównie nad warstwą komunikacji w zespole Scrum (10 specjalistów),
         rozwijając równolegle umiejętności Agile i Scrum.
     - years: "2020–2021"

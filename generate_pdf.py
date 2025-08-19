@@ -13,7 +13,7 @@ from playwright.async_api import async_playwright
 
 # noinspection PyTypeChecker
 class CVPDFGenerator:
-    def __init__(self, cv_folder="./static/", port=8000):
+    def __init__(self, cv_folder="./static", port=8000):
         self.cv_folder = Path(cv_folder).resolve()
         self.port = port
         self.server_process = None
