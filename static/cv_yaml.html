@@ -97,6 +97,10 @@
                     <section class="section-small">
                         ${renderLanguages(data.languages)}
                     </section>
+                    <h1>${data.labels.disability}</h1>
+                    <section class="section-small">
+                        ${renderDisabilities(data.disabilities)}
+                    </section>
                 </div>
             </section>
 
@@ -141,6 +145,13 @@
         return languages.map(lang => `
         <span class="language-name">${lang.name}</span>
         <span>${lang.level}</span>
+    `).join('');
+    }
+
+    function renderDisabilities(disabilities) {
+        return disabilities.map(dis => `
+        <span class="disability-name">${dis.name}</span>
+        <span>${dis.level}</span>
     `).join('');
     }
 

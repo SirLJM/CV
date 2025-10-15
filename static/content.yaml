@@ -15,6 +15,7 @@ en:
     skills: "Skills and Technology"
     education: "Education"
     language: "Language"
+    disability: "Certificate of Disability"
     projects: "Project highlights"
     position: "Position"
     technology: "Technology"
@@ -104,6 +105,9 @@ en:
       level: "Full professional proficiency - C1"
     - name: "Polish"
       level: "Native proficiency"
+  disabilities:
+    - name: "Level"
+      level: "Moderate"
   projects:
     - years: "2022–2023"
       title: "Medical app for Big Pharma"
@@ -155,6 +159,7 @@ pl:
     skills: "Umiejętności i technologie"
     education: "Wykształcenie"
     language: "Języki"
+    disability: "Orzeczenie o niepełnosprawności"
     projects: "Wybrane projekty"
     position: "Stanowisko"
     technology: "Technologie"
@@ -244,6 +249,9 @@ pl:
       level: "Biegła znajomość – C1"
     - name: "Polski"
       level: "Język ojczysty"
+  disabilities:
+    - name: "Stopień"
+      level: "Umiarkowany"
   projects:
     - years: "2022–2023"
       title: "Aplikacja medyczna dla Big Pharma"
