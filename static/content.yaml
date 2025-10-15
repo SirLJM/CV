@@ -1,11 +1,10 @@
 en:
   name: "Łukasz Wiśniewski"
   intro: >
-    Results-driven Project Manager with 5+ years of experience in IT and engineering,
-    combining technical expertise (Java, Agile) with strong leadership in delivering
-    complex projects. Proven ability to bridge gaps between teams, stakeholders, and
-    business goals through structured methodologies (PMI, Scrum) and risk mitigation.
-    Passionate about optimizing processes and mentoring teams to achieve measurable success.
+    Mid-level Java Software Engineer with 4+ years of experience in delivering complex
+    projects. Strong technical background combining backend development (Java, Spring)
+    with leadership and management skills. Dedicated to improving team collaboration and
+    communication skills. Passionate about optimizing  processes through Agile and Scrum.
   contact:
     phone: "+48510030097"
     email: "zeroeventhorizon@gmail.com"
@@ -68,6 +67,14 @@ en:
         - "Worked closely with production and quality departments to ensure high quality products."
         - "Inspected client's production lines to ensure smooth operation of new designs."
   skills:
+    - name: "Java and Spring Boot"
+      description: "4 years of experience with application and service development in various domains."
+    - name: "Jira, MS Project, Confluence, SharePoint"
+      description: "Utilized planning and collaboration tools to facilitate project management across company."
+    - name: "Kubernetes and Azure Cloud"
+      description: "2 years of experience building scalable distributed systems, optimizing reliability, costs and performance."
+    - name: "Python"
+      description: "Developing CI/CD scripts and tooling."
     - name: "Agile & Scrum Project Management | PMI Methodologies"
       description: "Trained and provided training on project management while working in multinational teams."
     - name: "Stakeholder & Cross-functional Team Leadership"
@@ -76,17 +83,9 @@ en:
       description: "Identified and provided strategies to manage risks."
     - name: "Budgeting & Cost Control <br/>($100K+ projects)"
       description: "Helped with setting up budget and cost reporting for new projects."
-    - name: "Jira, MS Project, Confluence, SharePoint"
-      description: "Utilized planning and collaboration tools to facilitate project management across company."
-    - name: "Java and Spring Boot"
-      description: "4 years of experience with application and service development in various domains."
-    - name: "Kubernetes and Azure Cloud"
-      description: "2 years of experience building scalable distributed systems, optimizing reliability, costs and performance."
-    - name: "Python"
-      description: "Developing CI/CD scripts and tooling."
     - name: "SolidWorks"
       description: "2 years of designing new products and maintaining technical documentation."
-  skills_other: "Other: LLMs, AI Prompting, Postgre SQL, HTML, CSS, Excel, Office, Outlook, Git, Office Scripts, FEM, SolidEdge"
+  skills_other: "Other: LLMs, AI Prompting, Postgres SQL, HTML, CSS, Excel, Office, Outlook, Git, Office Scripts, FEM, SolidEdge"
   education:
     - year: "2015"
       detail: "Finite Element Method - CAD/CAE"
@@ -144,12 +143,10 @@ en:
 pl:
   name: "Łukasz Wiśniewski"
   intro: >
-    Kierownik Projektu z ponad 5-letnim doświadczeniem w IT i inżynierii,
-    łączący zaplecze techniczne (Java, Agile) z silnymi kompetencjami przywódczymi
-    w dostarczaniu złożonych projektów. Udowodniona umiejętność łączenia zespołów,
-    interesariuszy i celów biznesowych dzięki metodycznemu podejściu (PMI, Scrum)
-    i skutecznemu zarządzaniu ryzykiem. Pasjonuję się optymalizacją procesów
-    i mentoringiem zespołów, aby osiągać mierzalne rezultaty.
+    Inżynier oprogramowania Java średniego szczebla z ponad 4-letnim doświadczeniem w realizacji 
+    złożonych projektów. Silne zaplecze techniczne łączące programowanie backendowe (Java, Spring)
+    z umiejętnościami przywódczymi i zarządczymi. Zaangażowany w poprawę współpracy zespołowej i
+    umiejętności komunikacyjnych. Pasjonat optymalizacji  procesów poprzez Agile i Scrum.
   contact:
     phone: "+48510030097"
     email: "zeroeventhorizon@gmail.com"
@@ -212,25 +209,25 @@ pl:
         - "Ścisła koordynacja z działem produkcji i jakości, zapewnienie wysokiej jakości produktów."
         - "Kontrola linii produkcyjnych klienta, płynne wdrożenie nowych projektów."
   skills:
-    - name: "Agile & Scrum Project Management | Metodyki PMI"
-      description: "Prowadzenie i szkolenie z zarządzania projektami </br> w środowisku międzynarodowym."
-    - name: "Zarządzanie interesariuszami i współpraca międzydziałowa"
-      description: "Zarządzanie oczekiwaniami interesariuszy i organizowanie współpracy między działami."
-    - name: "Zarządzanie ryzykiem i strategie ograniczania ryzyka"
-      description: "Identyfikacja i wdrażanie strategii zarządzania ryzykiem."
-    - name: "Budżetowanie i kontrola kosztów <br/>(projekty $100K+)"
-      description: "Wsparcie w tworzeniu budżetów i raportowania kosztów dla nowych projektów."
-    - name: "Jira, MS Project, Confluence, SharePoint"
-      description: "Wykorzystanie narzędzi planistycznych i współpracy do wsparcia zarządzania projektami."
     - name: "Java i Spring Boot"
       description: "4 lata doświadczenia w tworzeniu aplikacji i usług w różnych domenach."
     - name: "Kubernetes i Azure Cloud"
       description: "2 lata doświadczenia w budowie skalowalnych systemów rozproszonych, optymalizacja niezawodności, kosztów i wydajności."
     - name: "Python"
       description: "Tworzenie skryptów i narzędzi CI/CD."
+    - name: "Agile & Scrum Project Management | Metodyki PMI"
+      description: "Prowadzenie i szkolenie z zarządzania projektami </br> w środowisku międzynarodowym."
+    - name: "Jira, MS Project, Confluence, SharePoint"
+      description: "Wykorzystanie narzędzi planistycznych i współpracy do wsparcia zarządzania projektami."
+    - name: "Zarządzanie interesariuszami i współpraca międzydziałowa"
+      description: "Zarządzanie oczekiwaniami interesariuszy i organizowanie współpracy między działami."
+    - name: "Zarządzanie ryzykiem i strategie ograniczania ryzyka"
+      description: "Identyfikacja i wdrażanie strategii zarządzania ryzykiem."
+    - name: "Budżetowanie i kontrola kosztów <br/>(projekty $100K+)"
+      description: "Wsparcie w tworzeniu budżetów i raportowania kosztów dla nowych projektów."
     - name: "SolidWorks"
       description: "2 lata projektowania nowych produktów i utrzymania dokumentacji technicznej."
-  skills_other: "Inne: LLM, prompt engineering, PostgreSQL, HTML, CSS, Excel, Office, Outlook, Git, Office Scripts, MES (FEM), SolidEdge"
+  skills_other: "Inne: LLM, prompt engineering, Postgres SQL, HTML, CSS, Excel, Office, Outlook, Git, Office Scripts, MES (FEM), SolidEdge"
   education:
     - year: "2015"
       detail: "Metody Elementów Skończonych – CAD/CAE"
