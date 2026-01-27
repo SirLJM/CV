@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Łukasz Wiśniewski</title>
+    <title>Lukasz Wisniewski</title>
 
     <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
@@ -29,6 +29,11 @@
     let currentLang = 'en';
     let cvData = null;
 
+    function getVersion() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('version') || 'it';
+    }
+
     function showError(message) {
         console.error('Error loading content:', message);
         document.getElementById('cv-container').innerHTML =
@@ -37,7 +42,8 @@
 
     async function loadContent() {
         try {
-            const response = await fetch('content.yaml');
+            const version = getVersion();
+            const response = await fetch(`content_${version}.yaml`);
             if (!response.ok) {
                 showError(`HTTP ${response.status}: ${response.statusText}`);
                 return;
@@ -80,6 +86,9 @@
                 <a href="${data.contact.linkedin}" rel="noopener">
                     <span class="fab fa-linkedin icon"></span><span>${extractLinkedInUsername(data.contact.linkedin)}</span>
                 </a>
+                <span class="contact-location">
+                    <span class="fas fa-location-dot icon"></span><span>${data.contact.location}</span>
+                </span>
             </section>
 
             <h1>${data.labels.experience}</h1>
@@ -103,6 +112,10 @@
                     </section>
                 </div>
                 <div>
+                    <h1>${data.labels.certifications}</h1>
+                    <section class="section-small">
+                        ${renderCertifications(data.certifications)}
+                    </section>
                     <h1>${data.labels.language}</h1>
                     <section class="section-small">
                         ${renderLanguages(data.languages)}
@@ -138,6 +151,7 @@
         <div>
             <span class="experience-position">${exp.position}</span><br/>
             ${exp.company ? `<span class="experience-company">${exp.company}</span><br/>` : ''}
+            ${exp.technologies ? `<span class="experience-tech">${exp.technologies}</span><br/>` : ''}
             ${renderDetails(exp.details)}
         </div>
     `).join('');
@@ -156,6 +170,17 @@
         <div>
             <span class="education-detail">${edu.detail}</span><br/>
             <span class="education-org">${edu.org}</span><br/>
+        </div>
+    `).join('');
+    }
+
+    function renderCertifications(certifications) {
+        if (!certifications) return '';
+        return certifications.map(cert => `
+        <div class="certification-year">${cert.year}</div>
+        <div>
+            <span class="certification-name">${cert.name}</span><br/>
+            <span class="certification-org">${cert.org}</span>
         </div>
     `).join('');
     }
@@ -183,6 +208,8 @@
         <div class="workproject-details">
             <strong>${labels.position}</strong>
             <div>${project.position}</div>
+            ${project.budget ? `<strong>${labels.budget}</strong><div class="project-budget">${project.budget}</div>` : ''}
+            ${project.team_size ? `<strong>${labels.team}</strong><div class="project-team">${project.team_size}</div>` : ''}
             <strong>${labels.technology}</strong>
             <div>${project.technology}</div>
             <strong>${labels.role}</strong>

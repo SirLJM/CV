@@ -16,7 +16,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Any
 
-PDF_MARGIN = '0.5in'
+PDF_MARGIN = '0.4in'
 
 def is_port_available(port: int) -> bool:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -48,9 +48,10 @@ def create_directory_handler(directory: Path) -> type[http.server.SimpleHTTPRequ
 
 
 class CVPDFGenerator:
-    def __init__(self, cv_folder: str = "./static", port: int = 8000) -> None:
+    def __init__(self, cv_folder: str = "./static", port: int = 8000, version: str = "it") -> None:
         self.cv_folder = Path(cv_folder).resolve()
         self.port = port
+        self.version = version
         self.httpd: socketserver.TCPServer | None = None
 
     def start_server(self) -> None:
@@ -77,13 +78,13 @@ class CVPDFGenerator:
         from playwright.async_api import async_playwright
 
         if not output_file:
-            output_file = f"Lukasz Wisniewski CV {language}.pdf"
+            output_file = f"Lukasz Wisniewski CV {self.version.upper()} {language}.pdf"
 
         async with async_playwright() as p:
             browser = await p.chromium.launch()
             page = await browser.new_page()
 
-            url = f"http://localhost:{self.port}/cv_yaml.html"
+            url = f"http://localhost:{self.port}/cv_yaml.html?version={self.version}"
             await page.goto(url)
             await page.wait_for_selector("#cv")
 
@@ -108,13 +109,13 @@ class CVPDFGenerator:
             print(f"[OK] PDF generated: {output_file}")
 
     async def generate_both_pdfs(self) -> None:
-        print("Generating English PDF...")
-        await self.generate_pdf_playwright("en", "Lukasz Wisniewski CV en.pdf")
+        print(f"Generating English PDF ({self.version.upper()})...")
+        await self.generate_pdf_playwright("en")
 
-        print("Generating Polish PDF...")
-        await self.generate_pdf_playwright("pl", "Lukasz Wisniewski CV pl.pdf")
+        print(f"Generating Polish PDF ({self.version.upper()})...")
+        await self.generate_pdf_playwright("pl")
 
-        print("[OK] Both PDFs generated successfully!")
+        print(f"[OK] Both PDFs generated successfully for version: {self.version.upper()}")
 
     @staticmethod
     def install_requirements() -> None:
@@ -127,14 +128,15 @@ class CVPDFGenerator:
             print("[OK] Playwright installed")
 
     async def run(self) -> None:
-        print("CV PDF Generator Starting...")
+        print(f"CV PDF Generator Starting (version: {self.version})...")
 
         if not (self.cv_folder / "cv_yaml.html").exists():
             print(f"[ERROR] cv_yaml.html not found in {self.cv_folder}")
             return
 
-        if not (self.cv_folder / "content.yaml").exists():
-            print(f"[ERROR] content.yaml not found in {self.cv_folder}")
+        content_file = f"content_{self.version}.yaml"
+        if not (self.cv_folder / content_file).exists():
+            print(f"[ERROR] {content_file} not found in {self.cv_folder}")
             return
 
         try:
@@ -185,12 +187,14 @@ def render_experience(experiences: list[dict]) -> str:
             details_html = "<ul>" + "".join(f"<li>{d}</li>" for d in details) + "</ul>"
 
         company_html = f"<span class=\"experience-company\">{exp['company']}</span><br/>" if exp.get('company') else ""
+        tech_html = f"<span class=\"experience-tech\">{exp['technologies']}</span><br/>" if exp.get('technologies') else ""
 
         items.append(
             f'<div class="experience-year">{exp["years"]}</div>'
             f'<div>'
             f'<span class="experience-position">{exp["position"]}</span><br/>'
             f'{company_html}'
+            f'{tech_html}'
             f'{details_html}'
             f'</div>'
         )
@@ -226,14 +230,28 @@ def render_disabilities(disabilities: list[dict]) -> str:
     )
 
 
+def render_certifications(certifications: list[dict]) -> str:
+    if not certifications:
+        return ""
+    return "".join(
+        f'''<div class="certification-year">{c['year']}</div>
+            <div><span class="certification-name">{c['name']}</span><br/><span class="certification-org">{c['org']}</span></div>'''
+        for c in certifications
+    )
+
+
 def render_projects(projects: list[dict], labels: dict) -> str:
     items = []
     for p in projects:
+        budget_html = f"<strong>{labels.get('budget', 'Budget')}</strong><div class=\"project-budget\">{p['budget']}</div>" if p.get('budget') else ""
+        team_html = f"<strong>{labels.get('team', 'Team')}</strong><div class=\"project-team\">{p['team_size']}</div>" if p.get('team_size') else ""
         items.append(f'''
             <h2 class="workproject-heading">{p['years']} {p['title']}</h2>
             <div class="workproject-intro">{p['intro']}</div>
             <div class="workproject-details">
                 <strong>{labels.get('position', 'Position')}</strong><div>{p['position']}</div>
+                {budget_html}
+                {team_html}
                 <strong>{labels.get('technology', 'Technology')}</strong><div>{p['technology']}</div>
                 <strong>{labels.get('role', 'Role')}</strong><div>{p['role']}</div>
             </div>
@@ -271,6 +289,9 @@ def create_static_html(data: dict, labels: dict) -> str:
             <a href="{data['contact']['linkedin']}">
                 <span class="fab fa-linkedin icon"></span><span>linkedin.com/in/lukasz0wisniewski</span>
             </a>
+            <span class="contact-location">
+                <span class="fas fa-location-dot icon"></span><span>{data['contact'].get('location', '')}</span>
+            </span>
         </section>
 
         <h1>{labels.get('experience', 'Experience')}</h1>
@@ -294,6 +315,10 @@ def create_static_html(data: dict, labels: dict) -> str:
                 </section>
             </div>
             <div>
+                <h1>{labels.get('certifications', 'Certifications')}</h1>
+                <section class="section-small">
+                    {render_certifications(data.get('certifications', []))}
+                </section>
                 <h1>{labels.get('language', 'Language')}</h1>
                 <section class="section-small">
                     {render_languages(data['languages'])}
@@ -318,22 +343,27 @@ def main() -> None:
                         default='playwright', help='PDF generation method')
     parser.add_argument('--language', choices=['en', 'pl', 'both'],
                         default='both', help='Language version to generate')
+    parser.add_argument('--version', choices=['it', 'pm', 'all'],
+                        default='it', help='CV version to generate (it, pm, or all)')
     parser.add_argument('--port', type=int, default=8000,
                         help='Local server port')
 
     args = parser.parse_args()
 
+    versions = ['it', 'pm'] if args.version == 'all' else [args.version]
+
     if args.method == 'playwright':
-        generator = CVPDFGenerator(port=args.port)
-        if args.language == 'both':
-            asyncio.run(generator.run())
-        else:
-            generator.install_requirements()
-            generator.start_server()
-            try:
-                asyncio.run(generator.generate_pdf_playwright(args.language))
-            finally:
-                generator.stop_server()
+        for version in versions:
+            generator = CVPDFGenerator(port=args.port, version=version)
+            if args.language == 'both':
+                asyncio.run(generator.run())
+            else:
+                generator.install_requirements()
+                generator.start_server()
+                try:
+                    asyncio.run(generator.generate_pdf_playwright(args.language))
+                finally:
+                    generator.stop_server()
     else:
         if args.language in ['en', 'pl']:
             generate_pdf_weasyprint(args.language)

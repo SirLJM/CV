@@ -121,7 +121,7 @@ ul {
     border: 3px solid #235dcf;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    width: 180px;
     display: block;
 }
 
@@ -147,8 +147,7 @@ ul {
 }
 
 #contact {
-    /* Without phone number: */
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: grid;
@@ -176,7 +175,7 @@ ul {
 
 .section-experience {
     display: grid;
-    grid-template-columns: 8rem 1fr;
+    grid-template-columns: 10rem 1fr;
     row-gap: 1rem;
 }
 
@@ -206,6 +205,12 @@ ul {
 
 .experience-company {
     font-weight: var(--strong-font-weight);
+}
+
+.experience-tech {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
 }
 
 #technology-list {
@@ -265,6 +270,32 @@ ul {
 .education-detail {
     font-weight: var(--strong-font-weight);
     color: var(--highlight-color)
+}
+
+.certification-year {
+    font-weight: var(--strong-font-weight);
+}
+
+.certification-name {
+    font-weight: var(--strong-font-weight);
+    color: var(--highlight-color);
+}
+
+.certification-org {
+    font-style: italic;
+}
+
+.contact-location {
+    color: inherit;
+}
+
+.contact-location > span {
+    margin-left: 0.5rem;
+}
+
+.project-budget,
+.project-team {
+    font-weight: 600;
 }
 
 .language-name {
@@ -345,7 +376,7 @@ ul {
     }
 
     #experience {
-        grid-template-columns: 6rem 1fr;
+        grid-template-columns: 8rem 1fr;
     }
 }
 
@@ -392,17 +423,17 @@ ul {
     }
 
     #header {
-        margin-top: 3.7rem;
+        margin-top: 2rem;
     }
 
     #pageHeader {
         display: grid;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
     }
 
     #cv {
-        padding: 0 1.2cm 0 1.2cm;
+        padding: 0 0.8cm 0 0.8cm;
         margin: 0;
         max-width: none;
         background-color: white !important;
@@ -417,9 +448,9 @@ ul {
         break-after: page;
     }
 
-    /* Show the phone number: */
+    /* Show the phone number and location: */
     #contact {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
     }
 
     .icon, .fa, .fas {
@@ -439,6 +470,7 @@ ul {
     .fas.fa-phone:before { content: "\f095"; }
     .fas.fa-envelope:before { content: "\f0e0"; }
     .fab.fa-linkedin:before { content: "\f08c"; }
+    .fas.fa-location-dot:before { content: "\f3c5"; }
 
     .language-buttons {
         display: none;
