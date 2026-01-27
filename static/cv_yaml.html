@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<!--suppress JSUnresolvedReference -->
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Łukasz Wiśniewski</title>
 
     <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
     <link rel="stylesheet" href="styles/cv.css">
 
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Lukasz Wisniewski">
 </head>
 
 <body>
 
-<div class="button" style="position: fixed; top: 10px; right: 10px;">
+<div class="language-buttons">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('pl')">Polski</button>
 </div>
 
 <div id="cv-container">
-    <!-- Content will be dynamically loaded here -->
+    <div class="loading">Loading...</div>
 </div>
 
 <script>
     let currentLang = 'en';
     let cvData = null;
 
+    function showError(message) {
+        console.error('Error loading content:', message);
+        document.getElementById('cv-container').innerHTML =
+            '<p class="error">Error loading CV content. Please check that content.yaml is available.</p>';
+    }
+
     async function loadContent() {
         try {
             const response = await fetch('content.yaml');
+            if (!response.ok) {
+                showError(`HTTP ${response.status}: ${response.statusText}`);
+                return;
+            }
             const yamlText = await response.text();
             cvData = jsyaml.load(yamlText);
             renderCV();
         } catch (error) {
-            console.error('Error loading content:', error);
-            document.getElementById('cv-container').innerHTML = '<p>Error loading CV content. Please check that content.yaml is available.</p>';
+            showError(error);
         }
     }
 
@@ -48,11 +56,13 @@
         const data = cvData[currentLang];
         const container = document.getElementById('cv-container');
 
+        document.documentElement.lang = currentLang;
+
         container.innerHTML = `
         <div id="cv">
             <section id="header">
                 <div id="name-container">
-                    <img id="profile-picture" src="images/CV_1024x1024.png" alt="profile-picture"/>
+                    <img id="profile-picture" src="images/CV_1024x1024.png" alt="Photo of ${data.name}"/>
                     <span id="name">${data.name}</span>
                 </div>
                 <div id="intro">
@@ -67,8 +77,8 @@
                 <a href="mailto:${data.contact.email}">
                     <span class="fas fa-envelope icon"></span><span>${data.contact.email}</span>
                 </a>
-                <a href="${data.contact.linkedin}">
-                    <span class="fab fa-linkedin icon"></span><span>linkedin.com/in/lukasz0wisniewski</span>
+                <a href="${data.contact.linkedin}" rel="noopener">
+                    <span class="fab fa-linkedin icon"></span><span>${extractLinkedInUsername(data.contact.linkedin)}</span>
                 </a>
             </section>
 
@@ -105,9 +115,21 @@
             </section>
 
             <h1 id="work-projects">${data.labels.projects}</h1>
-            ${renderProjects(data.projects)}
+            ${renderProjects(data.projects, data.labels)}
         </div>
     `;
+    }
+
+    function extractLinkedInUsername(url) {
+        const match = url.match(/linkedin\.com\/in\/([^/]+)/);
+        return match ? `linkedin.com/in/${match[1]}` : url;
+    }
+
+    function renderDetails(details) {
+        if (details.length === 1 && !details[0].includes('•')) {
+            return details[0];
+        }
+        return '<ul>' + details.map(d => '<li>' + d + '</li>').join('') + '</ul>';
     }
 
     function renderExperience(experiences) {
@@ -116,10 +138,7 @@
         <div>
             <span class="experience-position">${exp.position}</span><br/>
             ${exp.company ? `<span class="experience-company">${exp.company}</span><br/>` : ''}
-            ${exp.details.length === 1 && !exp.details[0].includes('•') ?
-            exp.details[0] :
-            `<ul>${exp.details.map(detail => `<li>${detail}</li>`).join('')}</ul>`
-        }
+            ${renderDetails(exp.details)}
         </div>
     `).join('');
     }
@@ -155,18 +174,18 @@
     `).join('');
     }
 
-    function renderProjects(projects) {
+    function renderProjects(projects, labels) {
         return projects.map(project => `
         <h2 class="workproject-heading">${project.years} ${project.title}</h2>
         <div class="workproject-intro">
             ${project.intro}
         </div>
         <div class="workproject-details">
-            <strong>${cvData[currentLang].labels.position}</strong>
+            <strong>${labels.position}</strong>
             <div>${project.position}</div>
-            <strong>${cvData[currentLang].labels.technology}</strong>
+            <strong>${labels.technology}</strong>
             <div>${project.technology}</div>
-            <strong>${cvData[currentLang].labels.role}</strong>
+            <strong>${labels.role}</strong>
             <div>${project.role}</div>
         </div>
     `).join('');

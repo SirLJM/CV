@@ -28,6 +28,27 @@ body {
     font-family: var(--body-font-family), sans-serif;
 }
 
+.language-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--highlight-color);
+}
+
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 2rem;
     font-family: var(--heading-font-family), sans-serif;
@@ -367,7 +388,6 @@ ul {
     }
 
     html {
-        /*font-size: 8.2pt;*/
         font-size: 9pt;
     }
 
@@ -420,7 +440,7 @@ ul {
     .fas.fa-envelope:before { content: "\f0e0"; }
     .fab.fa-linkedin:before { content: "\f08c"; }
 
-    .button {
+    .language-buttons {
         display: none;
     }
 
