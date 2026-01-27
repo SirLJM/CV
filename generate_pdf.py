@@ -10,6 +10,7 @@ import socketserver
 import subprocess
 import sys
 import threading
+import time
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -17,6 +18,7 @@ if TYPE_CHECKING:
     from typing import Any
 
 PDF_MARGIN = '0.4in'
+
 
 def is_port_available(port: int) -> bool:
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -26,8 +28,8 @@ def is_port_available(port: int) -> bool:
         except OSError:
             return False
 
+
 def wait_for_server(port: int, timeout: float = 5.0) -> bool:
-    import time
     start = time.time()
     while time.time() - start < timeout:
         try:
@@ -177,25 +179,24 @@ def generate_pdf_weasyprint(language: str = "en", output_file: str | None = None
     print(f"[OK] PDF generated with WeasyPrint: {output_file}")
 
 
+def render_details(details: list[str]) -> str:
+    if len(details) == 1 and '•' not in details[0]:
+        return details[0]
+    return "<ul>" + "".join(f"<li>{d}</li>" for d in details) + "</ul>"
+
+
 def render_experience(experiences: list[dict]) -> str:
     items = []
     for exp in experiences:
-        details = exp['details']
-        if len(details) == 1 and '•' not in details[0]:
-            details_html = details[0]
-        else:
-            details_html = "<ul>" + "".join(f"<li>{d}</li>" for d in details) + "</ul>"
-
-        company_html = f"<span class=\"experience-company\">{exp['company']}</span><br/>" if exp.get('company') else ""
-        tech_html = f"<span class=\"experience-tech\">{exp['technologies']}</span><br/>" if exp.get('technologies') else ""
-
+        company_html = f'<span class="experience-company">{exp["company"]}</span><br/>' if exp.get('company') else ""
+        tech_html = f'<span class="experience-tech">{exp["technologies"]}</span><br/>' if exp.get('technologies') else ""
         items.append(
             f'<div class="experience-year">{exp["years"]}</div>'
             f'<div>'
             f'<span class="experience-position">{exp["position"]}</span><br/>'
             f'{company_html}'
             f'{tech_html}'
-            f'{details_html}'
+            f'{render_details(exp["details"])}'
             f'</div>'
         )
     return "".join(items)
@@ -240,20 +241,25 @@ def render_certifications(certifications: list[dict]) -> str:
     )
 
 
+def render_project_field(label: str, value: str | None, css_class: str = "") -> str:
+    if not value:
+        return ""
+    class_attr = f' class="{css_class}"' if css_class else ""
+    return f"<strong>{label}</strong><div{class_attr}>{value}</div>"
+
+
 def render_projects(projects: list[dict], labels: dict) -> str:
     items = []
     for p in projects:
-        budget_html = f"<strong>{labels.get('budget', 'Budget')}</strong><div class=\"project-budget\">{p['budget']}</div>" if p.get('budget') else ""
-        team_html = f"<strong>{labels.get('team', 'Team')}</strong><div class=\"project-team\">{p['team_size']}</div>" if p.get('team_size') else ""
         items.append(f'''
             <h2 class="workproject-heading">{p['years']} {p['title']}</h2>
             <div class="workproject-intro">{p['intro']}</div>
             <div class="workproject-details">
-                <strong>{labels.get('position', 'Position')}</strong><div>{p['position']}</div>
-                {budget_html}
-                {team_html}
-                <strong>{labels.get('technology', 'Technology')}</strong><div>{p['technology']}</div>
-                <strong>{labels.get('role', 'Role')}</strong><div>{p['role']}</div>
+                {render_project_field(labels.get('position', 'Position'), p['position'])}
+                {render_project_field(labels.get('budget', 'Budget'), p.get('budget'), 'project-budget')}
+                {render_project_field(labels.get('team', 'Team'), p.get('team_size'), 'project-team')}
+                {render_project_field(labels.get('technology', 'Technology'), p['technology'])}
+                {render_project_field(labels.get('role', 'Role'), p['role'])}
             </div>
         ''')
     return "".join(items)
