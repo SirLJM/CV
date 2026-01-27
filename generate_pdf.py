@@ -65,13 +65,13 @@ class CVPDFGenerator:
         if not wait_for_server(self.port):
             raise RuntimeError(f"Server failed to start on port {self.port}")
 
-        print(f"✓ Server started at http://localhost:{self.port}")
+        print(f"[OK] Server started at http://localhost:{self.port}")
 
     def stop_server(self) -> None:
         if self.httpd:
             self.httpd.shutdown()
             self.httpd.server_close()
-            print("✓ Server stopped")
+            print("[OK] Server stopped")
 
     async def generate_pdf_playwright(self, language: str = "en", output_file: str | None = None) -> None:
         from playwright.async_api import async_playwright
@@ -105,7 +105,7 @@ class CVPDFGenerator:
             )
 
             await browser.close()
-            print(f"✓ PDF generated: {output_file}")
+            print(f"[OK] PDF generated: {output_file}")
 
     async def generate_both_pdfs(self) -> None:
         print("Generating English PDF...")
@@ -114,7 +114,7 @@ class CVPDFGenerator:
         print("Generating Polish PDF...")
         await self.generate_pdf_playwright("pl", "Lukasz Wisniewski CV pl.pdf")
 
-        print("✓ Both PDFs generated successfully!")
+        print("[OK] Both PDFs generated successfully!")
 
     @staticmethod
     def install_requirements() -> None:
@@ -124,17 +124,17 @@ class CVPDFGenerator:
             print("Installing playwright...")
             subprocess.check_call([sys.executable, "-m", "pip", "install", "playwright"])
             subprocess.check_call([sys.executable, "-m", "playwright", "install", "chromium"])
-            print("✓ Playwright installed")
+            print("[OK] Playwright installed")
 
     async def run(self) -> None:
-        print("🚀 CV PDF Generator Starting...")
+        print("CV PDF Generator Starting...")
 
         if not (self.cv_folder / "cv_yaml.html").exists():
-            print(f"❌ Error: cv_yaml.html not found in {self.cv_folder}")
+            print(f"[ERROR] cv_yaml.html not found in {self.cv_folder}")
             return
 
         if not (self.cv_folder / "content.yaml").exists():
-            print(f"❌ Error: content.yaml not found in {self.cv_folder}")
+            print(f"[ERROR] content.yaml not found in {self.cv_folder}")
             return
 
         try:
@@ -142,7 +142,7 @@ class CVPDFGenerator:
             self.start_server()
             await self.generate_both_pdfs()
         except Exception as e:
-            print(f"❌ Error: {e}")
+            print(f"[ERROR] {e}")
         finally:
             self.stop_server()
 
@@ -172,7 +172,7 @@ def generate_pdf_weasyprint(language: str = "en", output_file: str | None = None
         output_file,
         stylesheets=[CSS(base_path / 'styles/cv.css')]
     )
-    print(f"✓ PDF generated with WeasyPrint: {output_file}")
+    print(f"[OK] PDF generated with WeasyPrint: {output_file}")
 
 
 def render_experience(experiences: list[dict]) -> str:

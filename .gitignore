@@ -246,3 +246,4 @@ cython_debug/
 
 *.pdf
 /CLAUDE.md
+/.claude/
