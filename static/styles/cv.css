@@ -127,18 +127,19 @@ ul {
 
 #name {
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 1.1;
     font-family: var(--heading-font-family), sans-serif;
     font-weight: var(--heading-font-weight);
     color: white;
     bottom: 10px;
     left: 10px;
+    right: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 #intro {
-    padding-left: 2rem;
+    padding-left: 2.2rem;
     text-wrap: pretty;
     border-left: 0.5rem solid;
     border-color: var(--highlight-color);

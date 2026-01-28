@@ -30,7 +30,7 @@
     let cvData = null;
 
     function getVersion() {
-        const params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(globalThis.location.search);
         return params.get('version') || 'it';
     }
 
@@ -68,7 +68,7 @@
         <div id="cv">
             <section id="header">
                 <div id="name-container">
-                    <img id="profile-picture" src="images/CV_1024x1024.png" alt="Photo of ${data.name}"/>
+                    <img id="profile-picture" src="images/my_photo_transparent.png" alt="Photo of ${data.name}"/>
                     <span id="name">${data.name}</span>
                 </div>
                 <div id="intro">

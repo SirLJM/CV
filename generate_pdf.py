@@ -349,14 +349,14 @@ def main() -> None:
                         default='playwright', help='PDF generation method')
     parser.add_argument('--language', choices=['en', 'pl', 'both'],
                         default='both', help='Language version to generate')
-    parser.add_argument('--version', choices=['it', 'pm', 'all'],
-                        default='it', help='CV version to generate (it, pm, or all)')
+    parser.add_argument('--version', choices=['it', 'pm', 'ba', 'all'],
+                        default='it', help='CV version to generate (it, pm, ba, or all)')
     parser.add_argument('--port', type=int, default=8000,
                         help='Local server port')
 
     args = parser.parse_args()
 
-    versions = ['it', 'pm'] if args.version == 'all' else [args.version]
+    versions = ['it', 'pm', 'ba'] if args.version == 'all' else [args.version]
 
     if args.method == 'playwright':
         for version in versions:

@@ -1,0 +1,337 @@
+en:
+  name: "Lukasz Wisniewski"
+  intro: >
+    I am a Business Analyst with technical background in software development and project management.
+    Over 4 years of experience translating business requirements into technical specifications
+    and bridging stakeholder needs with development teams. My hands-on programming expertise
+    (Java, Spring, Python) enables deeper understanding of technical constraints and solutions.
+    I am open to hybrid and on-site work.
+  contact:
+    phone: "+48510030097"
+    email: "zeroeventhorizon@gmail.com"
+    linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
+    location: "Katowice, Poland"
+    availability: "Hybrid / On-site / Remote"
+  labels:
+    experience: "Experience"
+    skills: "Skills and Technology"
+    education: "Education"
+    language: "Language"
+    disability: "Certificate of Disability"
+    projects: "Project highlights"
+    certifications: "Certifications"
+    position: "Position"
+    technology: "Technology"
+    role: "Role"
+    budget: "Budget"
+    team: "Team"
+  experience:
+    - years: "2023–2025"
+      position: "Career Break – Family Commitments"
+      company: null
+      technologies: null
+      details:
+        - "Full-time family support during this period. Ready to return with renewed energy and focus."
+    - years: "05.2022–03.2023"
+      position: "Software Engineer / Business Analyst"
+      company: "EPAM Systems"
+      technologies: "Java, Kubernetes, Azure, Jira, Confluence"
+      details:
+        - "Analyzed business requirements and translated them into user stories and technical specifications."
+        - "Facilitated communication between stakeholders and development team, resolving 15+ sprint blockers."
+        - "Documented system integration points and data flows for microservices architecture."
+        - "Backend development for health-tech microservices, contributing to 30% faster deployment cycle."
+    - years: "11.2021–04.2022"
+      position: "Junior Software Engineer"
+      company: "EPAM Systems"
+      technologies: "Java, Spring Boot, Git"
+      details:
+        - "Selected for intensive mentoring program to advance junior developers to mid-level proficiency."
+        - "Collaborated with senior developers on architecture design, code reviews, and debugging practices."
+    - years: "01.2020–10.2021"
+      position: "Junior Developer / Requirements Analyst"
+      company: "Asseco Data Systems"
+      technologies: "Java, Postgres, JavaScript, Jira"
+      details:
+        - "Gathered and analyzed client requirements, translating them into functional specifications."
+        - "Created user stories and acceptance criteria for development team implementation."
+        - "Collaborated in 12-person team to analyze, prioritize, and resolve customer-reported issues."
+        - "Developed document workflow application serving government entities and public sector clients."
+    - years: "2017–2020"
+      position: "Career Break – Health Recovery"
+      company: null
+      technologies: null
+      details:
+        - "Managed recovery from health challenges. Developed resilience, patience, and focus."
+    - years: "08.2016–06.2017"
+      position: "Project Manager / Business Analyst"
+      company: "Coveris Rigid Poland"
+      technologies: "MS Project, Excel, SharePoint"
+      details:
+        - "Conducted stakeholder interviews and requirements workshops to define project scope."
+        - "Created process documentation and workflow diagrams for 5+ teams."
+        - "Led $1M+ investment project from initiation to delivery, coordinating 15+ engineers across 5 departments."
+        - "Trained 15+ employees on PM methodologies, improving cross-department alignment."
+    - years: "06.2015–07.2016"
+      position: "NPD Specialist / Business Analyst"
+      company: "Coveris Rigid Poland"
+      technologies: "SolidWorks, Excel, CAD/CAE"
+      details:
+        - "Elicited customer requirements through interviews, surveys, and on-site observations."
+        - "Translated business needs into product specifications and technical requirements."
+        - "Coordinated cross-functional teams (sales, production, quality) to deliver new products to market."
+        - "Conducted gap analysis between current and desired product capabilities."
+  skills:
+    - name: "Requirements Elicitation & Analysis"
+      description: "4+ years gathering, analyzing, and documenting business and technical requirements."
+    - name: "User Stories & Acceptance Criteria"
+      description: "Creating clear, testable user stories with well-defined acceptance criteria."
+    - name: "Stakeholder Management"
+      description: "Facilitating communication between business stakeholders and technical teams."
+    - name: "Process Mapping & Documentation"
+      description: "Creating workflow diagrams, process flows, and system documentation."
+    - name: "Data Analysis & Reporting"
+      description: "Analyzing data to support business decisions and track project metrics."
+    - name: "Jira, Confluence, MS Office"
+      description: "Proficient in collaboration and documentation tools for requirements management."
+    - name: "Agile & Scrum Methodologies"
+      description: "Experienced in Agile environments, sprint planning, and backlog refinement."
+    - name: "Java and Spring Boot"
+      description: "4 years of backend development experience enabling technical requirement understanding."
+    - name: "SQL (Postgres, CosmosDB)"
+      description: "Database querying and data analysis for requirements validation."
+    - name: "API Design & Integration"
+      description: "Understanding REST APIs and system integration for technical specifications."
+  skills_other: "Other: LLMs, AI Prompting, Python, Kubernetes, Azure, HTML, CSS, Excel, Git, UML, BPMN"
+  certifications:
+    - name: "PMP (Project Management Professional)"
+      org: "Project Management Institute"
+      year: "2016"
+  education:
+    - year: "2015"
+      detail: "Finite Element Method - CAD/CAE"
+      org: "Kielce University of Technology"
+    - year: "2016"
+      detail: "PM Academy"
+      org: "PM Institute"
+    - year: "2017"
+      detail: "Methods and Tools of PM"
+      org: "University of Economics in Katowice"
+    - year: "2019"
+      detail: "Java Developer Web - Bootcamp"
+      org: "CodersLab"
+  languages:
+    - name: "English"
+      level: "Full professional proficiency - C1"
+    - name: "Polish"
+      level: "Native proficiency"
+  disabilities:
+    - name: "Level"
+      level: "Moderate"
+  projects:
+    - years: "05.2022–03.2023"
+      title: "Medical App for Big Pharma"
+      position: "Software Engineer / Business Analyst @ EPAM"
+      budget: null
+      team_size: "10 specialists"
+      technology: "Java, Kubernetes, Azure, Confluence"
+      intro: "Integrating technical systems of a microservice app for tracking health and activity of caretakers."
+      role: >
+        Part of multinational, cross-functional team delivering rapidly deployed application
+        to revolutionize caretaking market in the US. Analyzed business requirements and
+        translated them into technical specifications. Documented integration points and
+        data flows between microservices. Facilitated stakeholder communication and
+        resolved blockers through proactive requirements clarification.
+    - years: "01.2020–10.2021"
+      title: "Document Workflow App"
+      position: "Junior Developer / Requirements Analyst @ Asseco DS"
+      budget: null
+      team_size: "12 developers"
+      technology: "Java, Postgres, JavaScript"
+      intro: "Maintaining and expanding document workflow application for government entities and public sector clients."
+      role: >
+        In a small and agile team, I worked on both front-end and back-end of the application.
+        Analyzed client requirements and created user stories for development team.
+        Prioritized feature requests based on business value and technical feasibility.
+        Documented system behavior and created acceptance criteria for new functionality.
+    - years: "08.2016–06.2017"
+      title: "Industrial Equipment Integration"
+      position: "Project Manager / Business Analyst @ Coveris"
+      budget: "$1M+"
+      team_size: "15+ people, 5 departments"
+      technology: "MS Project, SharePoint, Excel"
+      intro: "Led integration of new industrial equipment into manufacturing facility, gathering requirements from multiple departments."
+      role: >
+        After promotion from NPD Specialist, I took over a project requiring extensive
+        requirements gathering across 5 departments. Conducted stakeholder interviews
+        to understand business needs and constraints. Created process documentation
+        and coordinated cross-functional teams. Delivered successfully within budget and timeline.
+
+pl:
+  name: "Łukasz Wiśniewski"
+  intro: >
+    Jestem Analitykiem Biznesowym z technicznym zapleczem w programowaniu i zarządzaniu projektami.
+    Ponad 4 lata doświadczenia w przekładaniu wymagań biznesowych na specyfikacje techniczne
+    i łączeniu potrzeb interesariuszy z zespołami deweloperskimi. Moje praktyczne doświadczenie
+    programistyczne (Java, Spring, Python) umożliwia głębsze zrozumienie ograniczeń i rozwiązań technicznych.
+    Jestem otwarty na pracę hybrydową lub stacjonarną.
+  contact:
+    phone: "+48510030097"
+    email: "zeroeventhorizon@gmail.com"
+    linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
+    location: "Katowice, Polska"
+    availability: "Hybrydowo / Stacjonarnie / Zdalnie"
+  labels:
+    experience: "Doświadczenie"
+    skills: "Umiejętności i technologie"
+    education: "Wykształcenie"
+    language: "Języki"
+    disability: "Orzeczenie o niepełnosprawności"
+    projects: "Wybrane projekty"
+    certifications: "Certyfikaty"
+    position: "Stanowisko"
+    technology: "Technologie"
+    role: "Rola"
+    budget: "Budżet"
+    team: "Zespół"
+  experience:
+    - years: "2023–2025"
+      position: "Przerwa zawodowa – obowiązki rodzinne"
+      company: null
+      technologies: null
+      details:
+        - "Pełnoetatowe wsparcie rodziny. Gotowość do powrotu z nową energią i motywacją."
+    - years: "05.2022–03.2023"
+      position: "Inżynier Oprogramowania / Analityk Biznesowy"
+      company: "EPAM Systems"
+      technologies: "Java, Kubernetes, Azure, Jira, Confluence"
+      details:
+        - "Analiza wymagań biznesowych i przekładanie ich na user stories i specyfikacje techniczne."
+        - "Komunikacja między interesariuszami a zespołem deweloperskim, rozwiązanie ponad 15 blokad sprintów."
+        - "Dokumentacja punktów integracji i przepływów danych w architekturze mikroserwisowej."
+        - "Rozwój backendu dla mikroserwisów medycznych, 30% szybszy cykl wdrożeń."
+    - years: "11.2021–04.2022"
+      position: "Młodszy Inżynier Oprogramowania"
+      company: "EPAM Systems"
+      technologies: "Java, Spring Boot, Git"
+      details:
+        - "Uczestnictwo w intensywnym programie mentoringowym podnoszącym umiejętności juniorów do poziomu mid."
+        - "Współpraca ze starszymi programistami nad architekturą, code review i debugowaniem."
+    - years: "01.2020–10.2021"
+      position: "Młodszy Programista / Analityk Wymagań"
+      company: "Asseco Data Systems"
+      technologies: "Java, Postgres, JavaScript, Jira"
+      details:
+        - "Zbieranie i analiza wymagań klientów, przekładanie ich na specyfikacje funkcjonalne."
+        - "Tworzenie user stories i kryteriów akceptacji dla zespołu deweloperskiego."
+        - "Współpraca w 12-osobowym zespole nad analizą, priorytetyzacją i rozwiązywaniem zgłoszeń klientów."
+        - "Rozwój aplikacji do obiegu dokumentów dla instytucji rządowych i sektora publicznego."
+    - years: "2017–2020"
+      position: "Przerwa zawodowa – rekonwalescencja"
+      company: null
+      technologies: null
+      details:
+        - "Powrót do zdrowia po problemach zdrowotnych. Rozwinięcie cierpliwości i koncentracji."
+    - years: "08.2016–06.2017"
+      position: "Kierownik Projektów / Analityk Biznesowy"
+      company: "Coveris Rigid Poland"
+      technologies: "MS Project, Excel, SharePoint"
+      details:
+        - "Przeprowadzanie wywiadów z interesariuszami i warsztatów wymagań w celu określenia zakresu projektu."
+        - "Tworzenie dokumentacji procesów i diagramów przepływu pracy dla 5+ zespołów."
+        - "Prowadzenie projektu inwestycyjnego $1M+ od inicjacji do realizacji, koordynacja 15+ inżynierów w 5 działach."
+        - "Przeszkolenie 15+ pracowników z metodologii PM, poprawa współpracy międzydziałowej."
+    - years: "06.2015–07.2016"
+      position: "Specjalista NPD / Analityk Biznesowy"
+      company: "Coveris Rigid Poland"
+      technologies: "SolidWorks, Excel, CAD/CAE"
+      details:
+        - "Pozyskiwanie wymagań klientów poprzez wywiady, ankiety i obserwacje na miejscu."
+        - "Przekładanie potrzeb biznesowych na specyfikacje produktowe i wymagania techniczne."
+        - "Koordynacja zespołów międzydziałowych (sprzedaż, produkcja, jakość) przy wprowadzaniu nowych produktów."
+        - "Analiza luk między obecnymi a pożądanymi możliwościami produktów."
+  skills:
+    - name: "Zbieranie i analiza wymagań"
+      description: "4+ lata zbierania, analizowania i dokumentowania wymagań biznesowych i technicznych."
+    - name: "User Stories i kryteria akceptacji"
+      description: "Tworzenie jasnych, testowalnych user stories z dobrze zdefiniowanymi kryteriami akceptacji."
+    - name: "Zarządzanie interesariuszami"
+      description: "Komunikacja między interesariuszami biznesowymi a zespołami technicznymi."
+    - name: "Mapowanie procesów i dokumentacja"
+      description: "Tworzenie diagramów przepływu pracy, procesów i dokumentacji systemowej."
+    - name: "Analiza danych i raportowanie"
+      description: "Analiza danych wspierająca decyzje biznesowe i śledzenie metryk projektu."
+    - name: "Jira, Confluence, MS Office"
+      description: "Biegłość w narzędziach współpracy i dokumentacji do zarządzania wymaganiami."
+    - name: "Metodyki Agile i Scrum"
+      description: "Doświadczenie w środowiskach Agile, planowaniu sprintów i refinemencie backlogu."
+    - name: "Java i Spring Boot"
+      description: "4 lata doświadczenia w programowaniu backendowym umożliwiające zrozumienie wymagań technicznych."
+    - name: "SQL (Postgres, CosmosDB)"
+      description: "Zapytania bazodanowe i analiza danych do walidacji wymagań."
+    - name: "Projektowanie API i integracje"
+      description: "Zrozumienie REST API i integracji systemowych do specyfikacji technicznych."
+  skills_other: "Inne: LLM, prompt engineering, Python, Kubernetes, Azure, HTML, CSS, Excel, Git, UML, BPMN"
+  certifications:
+    - name: "PMP (Project Management Professional)"
+      org: "Project Management Institute"
+      year: "2016"
+  education:
+    - year: "2015"
+      detail: "Metody Elementów Skończonych – CAD/CAE"
+      org: "Politechnika Świętokrzyska"
+    - year: "2016"
+      detail: "PM Academy"
+      org: "PM Institute"
+    - year: "2017"
+      detail: "Metody i narzędzia zarządzania projektami"
+      org: "Uniwersytet Ekonomiczny w Katowicach"
+    - year: "2019"
+      detail: "Java Developer Web – Bootcamp"
+      org: "CodersLab"
+  languages:
+    - name: "Angielski"
+      level: "Biegła znajomość – C1"
+    - name: "Polski"
+      level: "Język ojczysty"
+  disabilities:
+    - name: "Stopień"
+      level: "Umiarkowany"
+  projects:
+    - years: "05.2022–03.2023"
+      title: "Aplikacja medyczna dla Big Pharma"
+      position: "Inżynier Oprogramowania / Analityk Biznesowy @ EPAM"
+      budget: null
+      team_size: "10 specjalistów"
+      technology: "Java, Kubernetes, Azure, Confluence"
+      intro: "Integracja systemów technicznych mikroserwisowej aplikacji do monitorowania zdrowia i aktywności opiekunów."
+      role: >
+        Część międzynarodowego, wielofunkcyjnego zespołu dostarczającego szybko wdrażaną aplikację
+        mającą zrewolucjonizować rynek opieki w USA. Analiza wymagań biznesowych i przekładanie
+        ich na specyfikacje techniczne. Dokumentacja punktów integracji i przepływów danych
+        między mikroserwisami. Komunikacja z interesariuszami i rozwiązywanie blokad
+        poprzez proaktywne wyjaśnianie wymagań.
+    - years: "01.2020–10.2021"
+      title: "Aplikacja do obiegu dokumentów"
+      position: "Młodszy Programista / Analityk Wymagań @ Asseco DS"
+      budget: null
+      team_size: "12 deweloperów"
+      technology: "Java, Postgres, JavaScript"
+      intro: "Utrzymanie i rozwój aplikacji do obiegu dokumentów dla instytucji rządowych i sektora publicznego."
+      role: >
+        W małym i zwinnym zespole pracowałem nad frontendem i backendem aplikacji.
+        Analizowałem wymagania klientów i tworzyłem user stories dla zespołu deweloperskiego.
+        Priorytetyzowałem żądania funkcji na podstawie wartości biznesowej i wykonalności technicznej.
+        Dokumentowałem zachowanie systemu i tworzyłem kryteria akceptacji dla nowych funkcjonalności.
+    - years: "08.2016–06.2017"
+      title: "Integracja urządzeń przemysłowych"
+      position: "Kierownik Projektów / Analityk Biznesowy @ Coveris"
+      budget: "$1M+"
+      team_size: "15+ osób, 5 działów"
+      technology: "MS Project, SharePoint, Excel"
+      intro: "Prowadzenie integracji nowych urządzeń przemysłowych w zakładzie produkcyjnym, zbieranie wymagań z wielu działów."
+      role: >
+        Po awansie ze Specjalisty NPD przejąłem projekt wymagający szerokiego zbierania
+        wymagań w 5 działach. Przeprowadzałem wywiady z interesariuszami w celu zrozumienia
+        potrzeb biznesowych i ograniczeń. Tworzyłem dokumentację procesów i koordynowałem
+        zespoły międzydziałowe. Dostarczono z sukcesem w ramach budżetu i harmonogramu.
