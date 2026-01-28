@@ -427,6 +427,14 @@ ul {
         margin-top: 2rem;
     }
 
+    #name {
+        font-size: 1.9rem;
+    }
+
+    #profile-picture {
+        width: 140px;
+    }
+
     #pageHeader {
         display: grid;
         padding-top: 4rem;
