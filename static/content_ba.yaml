@@ -1,14 +1,13 @@
 en:
   name: "Lukasz Wisniewski"
   intro: >
-    I am a Business Analyst with technical background in software development and project management.
-    Over 4 years of experience translating business requirements into technical specifications
-    and bridging stakeholder needs with development teams. My hands-on programming expertise
-    (Java, Spring, Python) enables deeper understanding of technical constraints and solutions.
-    I am open to hybrid and on-site work.
+    I am a Business Analyst with a technical foundation in Java development and project
+    management. I have 4+ years of experience translating stakeholder needs into technical
+    specifications across healthcare, government, and manufacturing domains. My hands-on
+    coding experience enables deeper technical dialogue with development teams.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "wisniewski.luke@pm.me"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Poland"
     availability: "Hybrid / On-site / Remote"
@@ -31,7 +30,7 @@ en:
       company: null
       technologies: null
       details:
-        - "Full-time family support during this period. Ready to return with renewed energy and focus."
+        - "Dedicated family support period. Maintained industry awareness and ready for immediate availability."
     - years: "05.2022–03.2023"
       position: "Software Engineer / Business Analyst"
       company: "EPAM Systems"
@@ -62,7 +61,7 @@ en:
       company: null
       technologies: null
       details:
-        - "Managed recovery from health challenges. Developed resilience, patience, and focus."
+        - "Personal health management period. Maintained technical awareness and developed strong self-management skills."
     - years: "08.2016–06.2017"
       position: "Project Manager / Business Analyst"
       company: "Coveris Rigid Poland"
@@ -90,6 +89,8 @@ en:
       description: "Facilitating communication between business stakeholders and technical teams."
     - name: "Process Mapping & Documentation"
       description: "Creating workflow diagrams, process flows, and system documentation."
+    - name: "UML & BPMN Modeling"
+      description: "Creating use case diagrams, activity diagrams, and business process models."
     - name: "Data Analysis & Reporting"
       description: "Analyzing data to support business decisions and track project metrics."
     - name: "Jira, Confluence, MS Office"
@@ -102,11 +103,11 @@ en:
       description: "Database querying and data analysis for requirements validation."
     - name: "API Design & Integration"
       description: "Understanding REST APIs and system integration for technical specifications."
-  skills_other: "Other: LLMs, AI Prompting, Python, Kubernetes, Azure, HTML, CSS, Excel, Git, UML, BPMN"
+  skills_other: "Other: Miro, Lucidchart, LLMs, AI Prompting, Python, Kubernetes, Azure, HTML, CSS, Excel, Git"
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Finite Element Method - CAD/CAE"
@@ -170,14 +171,14 @@ en:
 pl:
   name: "Łukasz Wiśniewski"
   intro: >
-    Jestem Analitykiem Biznesowym z technicznym zapleczem w programowaniu i zarządzaniu projektami.
-    Ponad 4 lata doświadczenia w przekładaniu wymagań biznesowych na specyfikacje techniczne
-    i łączeniu potrzeb interesariuszy z zespołami deweloperskimi. Moje praktyczne doświadczenie
-    programistyczne (Java, Spring, Python) umożliwia głębsze zrozumienie ograniczeń i rozwiązań technicznych.
-    Jestem otwarty na pracę hybrydową lub stacjonarną.
+    Jestem Analitykiem Biznesowym z technicznym zapleczem w programowaniu Java i zarządzaniu
+    projektami. Posiadam ponad 4 lata doświadczenia w przekładaniu potrzeb interesariuszy
+    na specyfikacje techniczne w sektorach ochrony zdrowia, administracji publicznej
+    i przemysłu. Moje praktyczne doświadczenie programistyczne umożliwia głębszy dialog
+    techniczny z zespołami deweloperskimi.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "lukasz.wisniewski.pro@gmail.com"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Polska"
     availability: "Hybrydowo / Stacjonarnie / Zdalnie"
@@ -200,7 +201,7 @@ pl:
       company: null
       technologies: null
       details:
-        - "Pełnoetatowe wsparcie rodziny. Gotowość do powrotu z nową energią i motywacją."
+        - "Okres wsparcia rodziny. Utrzymywanie wiedzy branżowej, gotowość do natychmiastowego podjęcia pracy."
     - years: "05.2022–03.2023"
       position: "Inżynier Oprogramowania / Analityk Biznesowy"
       company: "EPAM Systems"
@@ -231,7 +232,7 @@ pl:
       company: null
       technologies: null
       details:
-        - "Powrót do zdrowia po problemach zdrowotnych. Rozwinięcie cierpliwości i koncentracji."
+        - "Okres zarządzania zdrowiem osobistym. Utrzymywanie wiedzy technicznej i rozwinięcie umiejętności samozarządzania."
     - years: "08.2016–06.2017"
       position: "Kierownik Projektów / Analityk Biznesowy"
       company: "Coveris Rigid Poland"
@@ -259,6 +260,8 @@ pl:
       description: "Komunikacja między interesariuszami biznesowymi a zespołami technicznymi."
     - name: "Mapowanie procesów i dokumentacja"
       description: "Tworzenie diagramów przepływu pracy, procesów i dokumentacji systemowej."
+    - name: "Modelowanie UML i BPMN"
+      description: "Tworzenie diagramów przypadków użycia, diagramów aktywności i modeli procesów biznesowych."
     - name: "Analiza danych i raportowanie"
       description: "Analiza danych wspierająca decyzje biznesowe i śledzenie metryk projektu."
     - name: "Jira, Confluence, MS Office"
@@ -271,11 +274,11 @@ pl:
       description: "Zapytania bazodanowe i analiza danych do walidacji wymagań."
     - name: "Projektowanie API i integracje"
       description: "Zrozumienie REST API i integracji systemowych do specyfikacji technicznych."
-  skills_other: "Inne: LLM, prompt engineering, Python, Kubernetes, Azure, HTML, CSS, Excel, Git, UML, BPMN"
+  skills_other: "Inne: Miro, Lucidchart, LLM, prompt engineering, Python, Kubernetes, Azure, HTML, CSS, Excel, Git"
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Metody Elementów Skończonych – CAD/CAE"

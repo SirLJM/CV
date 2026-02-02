@@ -28,11 +28,42 @@ body {
     font-family: var(--body-font-family), sans-serif;
 }
 
-.language-buttons {
+.switcher-buttons {
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 100;
+    display: flex;
+    gap: 1rem;
+}
+
+.version-buttons,
+.language-buttons {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.version-buttons button,
+.language-buttons button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--highlight-color);
+    background: white;
+    color: var(--highlight-color);
+    cursor: pointer;
+    font-family: var(--body-font-family), sans-serif;
+    font-size: 0.85rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.version-buttons button:hover,
+.language-buttons button:hover {
+    background: #e8f0ff;
+}
+
+.version-buttons button.active,
+.language-buttons button.active {
+    background: var(--highlight-color);
+    color: white;
 }
 
 .loading {
@@ -481,7 +512,7 @@ ul {
     .fab.fa-linkedin:before { content: "\f08c"; }
     .fas.fa-location-dot:before { content: "\f3c5"; }
 
-    .language-buttons {
+    .switcher-buttons {
         display: none;
     }
 

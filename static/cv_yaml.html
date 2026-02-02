@@ -16,9 +16,17 @@
 
 <body>
 
-<div class="language-buttons">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('pl')">Polski</button>
+<div class="switcher-buttons">
+    <div class="version-buttons">
+        <button onclick="switchVersion('general')" data-version="general">General</button>
+        <button onclick="switchVersion('it')" data-version="it">IT</button>
+        <button onclick="switchVersion('pm')" data-version="pm">PM</button>
+        <button onclick="switchVersion('ba')" data-version="ba">BA</button>
+    </div>
+    <div class="language-buttons">
+        <button onclick="switchLang('en')" data-lang="en">English</button>
+        <button onclick="switchLang('pl')" data-lang="pl">Polski</button>
+    </div>
 </div>
 
 <div id="cv-container">
@@ -27,11 +35,26 @@
 
 <script>
     let currentLang = 'en';
+    let currentVersion = 'general';
     let cvData = null;
 
-    function getVersion() {
+    function getVersionFromUrl() {
         const params = new URLSearchParams(globalThis.location.search);
-        return params.get('version') || 'it';
+        return params.get('version') || 'general';
+    }
+
+    function getLangFromUrl() {
+        const params = new URLSearchParams(globalThis.location.search);
+        return params.get('lang') || 'en';
+    }
+
+    function updateButtonStates() {
+        document.querySelectorAll('.version-buttons button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.version === currentVersion);
+        });
+        document.querySelectorAll('.language-buttons button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === currentLang);
+        });
     }
 
     function showError(message) {
@@ -42,8 +65,7 @@
 
     async function loadContent() {
         try {
-            const version = getVersion();
-            const response = await fetch(`content_${version}.yaml`);
+            const response = await fetch(`content_${currentVersion}.yaml`);
             if (!response.ok) {
                 showError(`HTTP ${response.status}: ${response.statusText}`);
                 return;
@@ -51,6 +73,7 @@
             const yamlText = await response.text();
             cvData = jsyaml.load(yamlText);
             renderCV();
+            updateButtonStates();
         } catch (error) {
             showError(error);
         }
@@ -220,10 +243,29 @@
 
     function switchLang(lang) {
         currentLang = lang;
+        updateUrl();
         renderCV();
+        updateButtonStates();
     }
 
-    document.addEventListener('DOMContentLoaded', loadContent);
+    async function switchVersion(version) {
+        currentVersion = version;
+        updateUrl();
+        await loadContent();
+    }
+
+    function updateUrl() {
+        const url = new URL(globalThis.location);
+        url.searchParams.set('version', currentVersion);
+        url.searchParams.set('lang', currentLang);
+        globalThis.history.replaceState({}, '', url);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        currentVersion = getVersionFromUrl();
+        currentLang = getLangFromUrl();
+        loadContent();
+    });
 </script>
 
 </body>

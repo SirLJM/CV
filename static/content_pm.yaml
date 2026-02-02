@@ -1,14 +1,13 @@
 en:
   name: "Lukasz Wisniewski"
   intro: >
-    I am a PMP-certified Project Manager and Business Analyst with technical background
-    in IT and manufacturing. Over 4 years of experience delivering complex projects using
-    PMI and Agile methodologies. My software development expertise (Java, Spring, Python) enables
-    me to bridge the gap between business requirements and technical implementation.
-    I am open to hybrid and on-site work.
+    I am a Technical Project Manager combining PMP methodology with hands-on software
+    development experience. I led a $1M+ industrial integration and coordinated Agile
+    delivery for healthcare microservices at EPAM. I have a unique ability to bridge
+    business stakeholders and engineering teams. Available for hybrid or on-site roles.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "wisniewski.luke@pm.me"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Poland"
     availability: "Hybrid / On-site / Remote"
@@ -31,13 +30,13 @@ en:
       company: null
       technologies: null
       details:
-        - "Full-time family support during this period. Ready to return with renewed energy and focus."
+        - "Dedicated family support period. Maintained industry awareness and ready for immediate availability."
     - years: "05.2022–03.2023"
-      position: "Software Engineer / Scrum Coordinator"
+      position: "Software Engineer / Delivery Coordinator"
       company: "EPAM Systems"
       technologies: "Java, Kubernetes, Azure, Jira, Confluence"
       details:
-        - "Coordinated sprint activities and facilitated daily stand-ups for a multinational Scrum team."
+        - "Supported Scrum ceremonies and facilitated daily stand-ups for a multinational team."
         - "Resolved 15+ sprint blockers through proactive risk anticipation and stakeholder communication."
         - "Backend development for health-tech microservices, contributing to 30% faster deployment cycle via Agile refinements."
     - years: "11.2021–04.2022"
@@ -60,7 +59,7 @@ en:
       company: null
       technologies: null
       details:
-        - "Managed recovery from health challenges. Developed resilience, patience, and focus."
+        - "Personal health management period. Maintained technical awareness and developed strong self-management skills."
     - years: "08.2016–06.2017"
       position: "Project Manager"
       company: "Coveris Rigid Poland"
@@ -103,7 +102,7 @@ en:
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Finite Element Method - CAD/CAE"
@@ -141,7 +140,7 @@ en:
         and set standards for future projects. Delivered successfully within budget and timeline.
     - years: "11.2021–03.2023"
       title: "Medical App for Big Pharma"
-      position: "Software Engineer / Scrum Coordinator @ EPAM"
+      position: "Software Engineer / Delivery Coordinator @ EPAM"
       budget: null
       team_size: "10 specialists"
       technology: "Java, Kubernetes, Azure"
@@ -149,7 +148,7 @@ en:
       role: >
         Part of multinational, cross-functional team delivering rapidly deployed application
         to revolutionize caretaking market in the US. Worked on communication layer while
-        coordinating sprint activities and facilitating Scrum ceremonies.
+        supporting sprint activities and facilitating Scrum ceremonies.
         Focused on empowering Agile practices and removing blockers for the team.
     - years: "01.2020–10.2021"
       title: "Document Workflow App"
@@ -166,14 +165,14 @@ en:
 pl:
   name: "Łukasz Wiśniewski"
   intro: >
-    Jestem certyfikowanym Project Managerem (PMP) i Analitykiem Biznesowym z technicznym
-    zapleczem w IT i przemyśle. Ponad 4 lata doświadczenia w realizacji złożonych projektów
-    z wykorzystaniem metodyk PMI i Agile. Moje doświadczenie programistyczne (Java, Spring, Python)
-    pozwala skutecznie łączyć wymagania biznesowe z realizacją techniczną.
-    Jestem otwarty na pracę hybrydową lub stacjonarną.
+    Jestem Technicznym Kierownikiem Projektów, łączącym metodykę PMP z praktycznym
+    doświadczeniem programistycznym. Prowadziłem integrację przemysłową o wartości $1M+
+    oraz koordynowałem dostawy Agile dla mikroserwisów medycznych w EPAM. Posiadam
+    unikalną umiejętność łączenia interesariuszy biznesowych z zespołami inżynierskimi.
+    Jestem dostępny do pracy hybrydowej lub stacjonarnej.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "lukasz.wisniewski.pro@gmail.com"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Polska"
     availability: "Hybrydowo / Stacjonarnie / Zdalnie"
@@ -196,13 +195,13 @@ pl:
       company: null
       technologies: null
       details:
-        - "Pełnoetatowe wsparcie rodziny. Gotowość do powrotu z nową energią i motywacją."
+        - "Okres wsparcia rodziny. Utrzymywanie wiedzy branżowej, gotowość do natychmiastowego podjęcia pracy."
     - years: "05.2022–03.2023"
-      position: "Inżynier Oprogramowania / Koordynator Scrum"
+      position: "Inżynier Oprogramowania / Koordynator Dostaw"
       company: "EPAM Systems"
       technologies: "Java, Kubernetes, Azure, Jira, Confluence"
       details:
-        - "Koordynacja aktywności sprintowych i prowadzenie daily stand-upów dla międzynarodowego zespołu Scrum."
+        - "Wsparcie ceremonii Scrum i prowadzenie daily stand-upów dla międzynarodowego zespołu."
         - "Rozwiązanie ponad 15 blokad sprintów poprzez proaktywne przewidywanie ryzyk i komunikację z interesariuszami."
         - "Rozwój backendu dla mikroserwisów medycznych, 30% szybszy cykl wdrożeń dzięki usprawnieniom Agile."
     - years: "11.2021–04.2022"
@@ -225,7 +224,7 @@ pl:
       company: null
       technologies: null
       details:
-        - "Powrót do zdrowia po problemach zdrowotnych. Rozwinięcie cierpliwości i koncentracji."
+        - "Okres zarządzania zdrowiem osobistym. Utrzymywanie wiedzy technicznej i rozwinięcie umiejętności samozarządzania."
     - years: "08.2016–06.2017"
       position: "Kierownik Projektów"
       company: "Coveris Rigid Poland"
@@ -268,7 +267,7 @@ pl:
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Metody Elementów Skończonych – CAD/CAE"
@@ -306,7 +305,7 @@ pl:
         i ustanowiło standardy dla przyszłych projektów. Dostarczono z sukcesem w ramach budżetu i harmonogramu.
     - years: "11.2021–03.2023"
       title: "Aplikacja medyczna dla Big Pharma"
-      position: "Inżynier Oprogramowania / Koordynator Scrum @ EPAM"
+      position: "Inżynier Oprogramowania / Koordynator Dostaw @ EPAM"
       budget: null
       team_size: "10 specjalistów"
       technology: "Java, Kubernetes, Azure"
@@ -314,7 +313,7 @@ pl:
       role: >
         Część międzynarodowego, wielofunkcyjnego zespołu dostarczającego szybko wdrażaną aplikację
         mającą zrewolucjonizować rynek opieki w USA. Pracowałem nad warstwą komunikacji,
-        koordynując jednocześnie aktywności sprintowe i prowadząc ceremonie Scrum.
+        wspierając jednocześnie aktywności sprintowe i prowadząc ceremonie Scrum.
         Skupiałem się na wzmacnianiu praktyk Agile i usuwaniu blokad dla zespołu.
     - years: "01.2020–10.2021"
       title: "Aplikacja do obiegu dokumentów"

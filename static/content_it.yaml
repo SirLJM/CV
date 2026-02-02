@@ -1,14 +1,13 @@
 en:
   name: "Lukasz Wisniewski"
   intro: >
-    I am a Mid-level Java Software Engineer with 4+ years of experience in delivering complex
-    projects. Strong technical background combining backend development (Java, Spring, Kubernetes)
-    with cloud technologies and DevOps practices. Experienced in Agile/Scrum environments
-    with multinational teams. Passionate about clean code and continuous improvement.
-    I am open to hybrid and on-site work.
+    I am a Java Software Engineer with 3+ years of hands-on backend development (Spring Boot,
+    Kubernetes, Azure) and additional experience in technical project coordination.
+    I have delivered microservices for healthcare and government sectors. Returning from
+    a planned career break, I am immediately available for hybrid or on-site roles in Katowice.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "wisniewski.luke@pm.me"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Poland"
     availability: "Hybrid / On-site / Remote"
@@ -31,7 +30,7 @@ en:
       company: null
       technologies: null
       details:
-        - "Full-time family support during this period. Ready to return with renewed energy and focus."
+        - "Dedicated family support period. Maintained industry awareness and ready for immediate availability."
     - years: "05.2022–03.2023"
       position: "Java Software Engineer"
       company: "EPAM Systems"
@@ -61,7 +60,7 @@ en:
       company: null
       technologies: null
       details:
-        - "Managed recovery from health challenges. Developed resilience, patience, and focus."
+        - "Personal health management period. Maintained technical awareness and developed strong self-management skills."
     - years: "08.2016–06.2017"
       position: "Project Manager"
       company: "Coveris Rigid Poland"
@@ -80,7 +79,7 @@ en:
         - "Inspected client's production lines to ensure smooth operation of new designs."
   skills:
     - name: "Java and Spring Boot"
-      description: "4 years of experience with application and service development in various domains."
+      description: "3+ years of experience with application and service development in various domains."
     - name: "Kubernetes and Azure Cloud"
       description: "2 years of experience building scalable distributed systems, optimizing reliability, costs and performance."
     - name: "Python"
@@ -99,11 +98,11 @@ en:
       description: "Systematic approach to identifying and resolving complex technical issues."
     - name: "Team Collaboration"
       description: "Effective communication and coordination with cross-functional and remote teams."
-  skills_other: "Other: LLMs, AI Prompting, HTML, CSS, Excel, Office, Office Scripts, SolidWorks, CAD/CAE"
+  skills_other: "Other: Docker, JUnit, Mockito, Jenkins, GitHub Actions, RabbitMQ, LLMs, AI Prompting, HTML, CSS, Excel, Office"
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Finite Element Method - CAD/CAE"
@@ -164,15 +163,14 @@ en:
 pl:
   name: "Łukasz Wiśniewski"
   intro: >
-    Jestem inżynierem oprogramowania Java średniego szczebla z ponad 4-letnim doświadczeniem
-    w realizacji złożonych projektów. Silne zaplecze techniczne łączące programowanie
-    backendowe (Java, Spring, Kubernetes) z technologiami chmurowymi i praktykami DevOps.
-    Doświadczenie w środowiskach Agile/Scrum w międzynarodowych zespołach.
-    Pasjonat czystego kodu i ciągłego doskonalenia.
-    Jestem otwarty na pracę hybrydową lub stacjonarną.
+    Jestem Inżynierem Oprogramowania Java z ponad 3-letnim doświadczeniem w programowaniu
+    backendowym (Spring Boot, Kubernetes, Azure) oraz dodatkowym doświadczeniem w koordynacji
+    technicznej. Dostarczałem mikroserwisy dla sektorów ochrony zdrowia i administracji
+    publicznej. Po planowanej przerwie zawodowej jestem natychmiast dostępny do pracy
+    hybrydowej lub stacjonarnej w Katowicach.
   contact:
     phone: "+48510030097"
-    email: "zeroeventhorizon@gmail.com"
+    email: "lukasz.wisniewski.pro@gmail.com"
     linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
     location: "Katowice, Polska"
     availability: "Hybrydowo / Stacjonarnie / Zdalnie"
@@ -195,7 +193,7 @@ pl:
       company: null
       technologies: null
       details:
-        - "Pełnoetatowe wsparcie rodziny. Gotowość do powrotu z nową energią i motywacją."
+        - "Okres wsparcia rodziny. Utrzymywanie wiedzy branżowej, gotowość do natychmiastowego podjęcia pracy."
     - years: "05.2022–03.2023"
       position: "Inżynier Oprogramowania Java"
       company: "EPAM Systems"
@@ -225,7 +223,7 @@ pl:
       company: null
       technologies: null
       details:
-        - "Powrót do zdrowia po problemach zdrowotnych. Rozwinięcie cierpliwości i koncentracji."
+        - "Okres zarządzania zdrowiem osobistym. Utrzymywanie wiedzy technicznej i rozwinięcie umiejętności samozarządzania."
     - years: "08.2016–06.2017"
       position: "Kierownik Projektów"
       company: "Coveris Rigid Poland"
@@ -244,7 +242,7 @@ pl:
         - "Kontrola linii produkcyjnych klienta, płynne wdrożenie nowych projektów."
   skills:
     - name: "Java i Spring Boot"
-      description: "4 lata doświadczenia w tworzeniu aplikacji i usług w różnych domenach."
+      description: "Ponad 3 lata doświadczenia w tworzeniu aplikacji i usług w różnych domenach."
     - name: "Kubernetes i Azure Cloud"
       description: "2 lata doświadczenia w budowie skalowalnych systemów rozproszonych, optymalizacja niezawodności, kosztów i wydajności."
     - name: "Python"
@@ -263,11 +261,11 @@ pl:
       description: "Systematyczne podejście do identyfikacji i rozwiązywania złożonych problemów technicznych."
     - name: "Współpraca Zespołowa"
       description: "Efektywna komunikacja i koordynacja z zespołami wielofunkcyjnymi i zdalnymi."
-  skills_other: "Inne: LLM, prompt engineering, HTML, CSS, Excel, Office, Office Scripts, SolidWorks, CAD/CAE"
+  skills_other: "Inne: Docker, JUnit, Mockito, Jenkins, GitHub Actions, RabbitMQ, LLM, prompt engineering, HTML, CSS, Excel, Office"
   certifications:
     - name: "PMP (Project Management Professional)"
       org: "Project Management Institute"
-      year: "2016"
+      year: "2016 (Active)"
   education:
     - year: "2015"
       detail: "Metody Elementów Skończonych – CAD/CAE"

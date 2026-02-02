@@ -1,0 +1,323 @@
+en:
+  name: "Lukasz Wisniewski"
+  intro: >
+    I am a versatile professional combining software engineering, project management,
+    and business analysis experience. With 3+ years in Java backend development and
+    a PMP certification, I bridge technical and business domains across healthcare,
+    government, and manufacturing sectors. I thrive in roles requiring both technical
+    understanding and stakeholder coordination.
+  contact:
+    phone: "+48510030097"
+    email: "wisniewski.luke@pm.me"
+    linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
+    location: "Katowice, Poland"
+    availability: "Hybrid / On-site / Remote"
+  labels:
+    experience: "Experience"
+    skills: "Skills and Technology"
+    education: "Education"
+    language: "Language"
+    disability: "Certificate of Disability"
+    projects: "Project highlights"
+    certifications: "Certifications"
+    position: "Position"
+    technology: "Technology"
+    role: "Role"
+    budget: "Budget"
+    team: "Team"
+  experience:
+    - years: "2023–2025"
+      position: "Career Break – Family Commitments"
+      company: null
+      technologies: null
+      details:
+        - "Dedicated family support period. Maintained industry awareness and ready for immediate availability."
+    - years: "05.2022–03.2023"
+      position: "Java Software Engineer"
+      company: "EPAM Systems"
+      technologies: "Java, Kubernetes, Azure, Jira, Confluence"
+      details:
+        - "Backend development for health-tech microservices, contributing to 30% faster deployment cycle."
+        - "Collaborated with multinational Scrum team, resolving 15+ sprint blockers through proactive communication."
+        - "Worked on communication layer and integration components in distributed microservices architecture."
+    - years: "11.2021–04.2022"
+      position: "Junior Java Software Engineer"
+      company: "EPAM Systems"
+      technologies: "Java, Spring Boot, Git"
+      details:
+        - "Selected for intensive mentoring program to advance junior developers to mid-level proficiency."
+        - "Collaborated with senior developers on architecture design, code reviews, and debugging practices."
+    - years: "01.2020–10.2021"
+      position: "Junior Java Developer"
+      company: "Asseco Data Systems"
+      technologies: "Java, Postgres, JavaScript, Jira"
+      details:
+        - "Developed document workflow application serving government entities and public sector clients."
+        - "Added new features based on customer requirements and translated them into technical implementations."
+        - "Collaborated in 12-person team to analyze, prioritize, and resolve customer-reported issues."
+    - years: "2017–2020"
+      position: "Career Break – Health Recovery"
+      company: null
+      technologies: null
+      details:
+        - "Personal health management period. Maintained technical awareness and developed strong self-management skills."
+    - years: "08.2016–06.2017"
+      position: "Project Manager"
+      company: "Coveris Rigid Poland"
+      technologies: "MS Project, Excel, SharePoint"
+      details:
+        - "Established PMO framework, standardizing workflows for 5+ teams, reducing project delays by 25%."
+        - "Led $1M+ investment project from initiation to delivery, coordinating 15+ engineers across 5 departments."
+        - "Trained 15+ employees on PM methodologies, improving cross-department alignment."
+    - years: "06.2015–07.2016"
+      position: "New Product Development Specialist"
+      company: "Coveris Rigid Poland"
+      technologies: "SolidWorks, Excel, CAD/CAE"
+      details:
+        - "Collaborated with sales team and customers to introduce new products to the market."
+        - "Worked closely with production and quality departments to ensure high quality products."
+        - "Inspected client's production lines to ensure smooth operation of new designs."
+  skills:
+    - name: "Java and Spring Boot"
+      description: "3+ years of backend application and service development in various domains."
+    - name: "Kubernetes and Azure Cloud"
+      description: "2 years building scalable distributed systems in cloud-native architecture."
+    - name: "Project Management"
+      description: "PMP certified with experience leading cross-functional teams and $1M+ projects."
+    - name: "Agile & Scrum"
+      description: "Experienced in Agile environments, sprint planning, and retrospectives."
+    - name: "Requirements Analysis"
+      description: "Translating business needs into technical specifications and user stories."
+    - name: "Stakeholder Communication"
+      description: "Bridging technical teams and business stakeholders across multiple domains."
+    - name: "SQL (Postgres, CosmosDB)"
+      description: "Database design, query optimization, and data modeling for applications."
+    - name: "Python"
+      description: "Developing automation scripts, CI/CD tooling, and utility applications."
+    - name: "Jira, Confluence, MS Project"
+      description: "Proficient in project tracking, documentation, and collaboration tools."
+    - name: "Problem Solving"
+      description: "Systematic approach to identifying and resolving complex technical and organizational issues."
+  skills_other: "Other: Docker, JUnit, Jenkins, GitHub Actions, REST API, GraphQL, LLMs, AI Prompting, HTML, CSS, Excel, Office"
+  certifications:
+    - name: "PMP (Project Management Professional)"
+      org: "Project Management Institute"
+      year: "2016 (Active)"
+  education:
+    - year: "2015"
+      detail: "Finite Element Method - CAD/CAE"
+      org: "Kielce University of Technology"
+    - year: "2016"
+      detail: "PM Academy"
+      org: "PM Institute"
+    - year: "2017"
+      detail: "Methods and Tools of PM"
+      org: "University of Economics in Katowice"
+    - year: "2019"
+      detail: "Java Developer Web - Bootcamp"
+      org: "CodersLab"
+  languages:
+    - name: "English"
+      level: "Full professional proficiency - C1"
+    - name: "Polish"
+      level: "Native proficiency"
+  disabilities:
+    - name: "Level"
+      level: "Moderate"
+  projects:
+    - years: "05.2022–03.2023"
+      title: "Medical App for Big Pharma"
+      position: "Java Software Engineer @ EPAM"
+      budget: null
+      team_size: "10 specialists"
+      technology: "Java, Kubernetes, Azure"
+      intro: "Integrating technical systems of a microservice app for tracking health and activity of caretakers."
+      role: >
+        Part of a multinational, cross-functional team delivering a rapidly deployed application
+        to revolutionize the caretaking market in the US. Worked on communication layer in a
+        Scrum team of 10 specialists, building microservices and integration components
+        in a cloud-native architecture.
+    - years: "01.2020–10.2021"
+      title: "Document Workflow App"
+      position: "Junior Java Developer @ Asseco DS"
+      budget: null
+      team_size: "12 developers"
+      technology: "Java, Postgres, JavaScript"
+      intro: "Maintaining and expanding document workflow application for government entities and public sector clients."
+      role: >
+        In a small and agile team of developers, I worked on both front-end and back-end of the application.
+        Focused on fixing bugs and adding requested functionality based on many requests from our numerous customers.
+        This was my first professional role as a developer, focused on building solid coding foundations.
+    - years: "08.2016–06.2017"
+      title: "Industrial Equipment Integration"
+      position: "Project Manager @ Coveris"
+      budget: "$1M+"
+      team_size: "15+ people, 5 departments"
+      technology: "MS Project, SharePoint, Leadership"
+      intro: "Led integration of new industrial equipment into manufacturing facility."
+      role: >
+        After working as NPD specialist I got promoted to PM. I managed a project initially launched without oversight.
+        Quickly gathered knowledge and organized cooperation between departments to meet stakeholders expectations.
+        Identified several major risks and resolved them on a tight schedule, delivering successfully within budget.
+
+pl:
+  name: "Lukasz Wisniewski"
+  intro: >
+    Jestem wszechstronnym specjalista laczacym doswiadczenie w inzynierii oprogramowania,
+    zarzadzaniu projektami i analizie biznesowej. Z ponad 3-letnim doswiadczeniem w rozwoju
+    backendu Java i certyfikatem PMP, lacze domeny techniczne i biznesowe w sektorach
+    ochrony zdrowia, administracji publicznej i przemyslu. Realizuje sie w rolach wymagajacych
+    zarowno zrozumienia technicznego, jak i koordynacji z interesariuszami.
+  contact:
+    phone: "+48510030097"
+    email: "lukasz.wisniewski.pro@gmail.com"
+    linkedin: "https://www.linkedin.com/in/lukasz0wisniewski/"
+    location: "Katowice, Polska"
+    availability: "Hybrydowo / Stacjonarnie / Zdalnie"
+  labels:
+    experience: "Doswiadczenie"
+    skills: "Umiejetnosci i technologie"
+    education: "Wyksztalcenie"
+    language: "Jezyki"
+    disability: "Orzeczenie o niepelnosprawnosci"
+    projects: "Wybrane projekty"
+    certifications: "Certyfikaty"
+    position: "Stanowisko"
+    technology: "Technologie"
+    role: "Rola"
+    budget: "Budzet"
+    team: "Zespol"
+  experience:
+    - years: "2023–2025"
+      position: "Przerwa zawodowa – obowiazki rodzinne"
+      company: null
+      technologies: null
+      details:
+        - "Okres wsparcia rodziny. Utrzymywanie wiedzy branzowej, gotowosc do natychmiastowego podjecia pracy."
+    - years: "05.2022–03.2023"
+      position: "Inzynier Oprogramowania Java"
+      company: "EPAM Systems"
+      technologies: "Java, Kubernetes, Azure, Jira, Confluence"
+      details:
+        - "Rozwoj backendu dla mikroserwisow medycznych, 30% szybszy cykl wdrozen."
+        - "Wspolpraca w miedzynarodowym zespole Scrum, rozwiazanie ponad 15 blokad sprintow poprzez proaktywna komunikacje."
+        - "Praca nad warstwa komunikacji i komponentami integracyjnymi w architekturze mikroserwisowej."
+    - years: "11.2021–04.2022"
+      position: "Mlodszy Inzynier Oprogramowania Java"
+      company: "EPAM Systems"
+      technologies: "Java, Spring Boot, Git"
+      details:
+        - "Uczestnictwo w intensywnym programie mentoringowym podnoszacym umiejetnosci juniorow do poziomu mid."
+        - "Wspolpraca ze starszymi programistami nad architektura, code review i debugowaniem."
+    - years: "01.2020–10.2021"
+      position: "Mlodszy Programista Java"
+      company: "Asseco Data Systems"
+      technologies: "Java, Postgres, JavaScript, Jira"
+      details:
+        - "Rozwoj aplikacji do obiegu dokumentow dla instytucji rzadowych i sektora publicznego."
+        - "Dodawanie nowych funkcji na podstawie wymagan klientow i przekladanie ich na implementacje techniczne."
+        - "Wspolpraca w 12-osobowym zespole nad analiza, priorytetyzacja i rozwiazywaniem zgloszen klientow."
+    - years: "2017–2020"
+      position: "Przerwa zawodowa – rekonwalescencja"
+      company: null
+      technologies: null
+      details:
+        - "Okres zarzadzania zdrowiem osobistym. Utrzymywanie wiedzy technicznej i rozwiniecie umiejetnosci samozarzadzania."
+    - years: "08.2016–06.2017"
+      position: "Kierownik Projektow"
+      company: "Coveris Rigid Poland"
+      technologies: "MS Project, Excel, SharePoint"
+      details:
+        - "Utworzenie ram PMO, standaryzacja przeplywow pracy dla 5+ zespolow, zmniejszenie opoznien o 25%."
+        - "Prowadzenie projektu inwestycyjnego $1M+ od inicjacji do realizacji, koordynacja 15+ inzynierow w 5 dzialach."
+        - "Przeszkolenie 15+ pracownikow z metodologii PM, poprawa wspolpracy miedzydzialowej."
+    - years: "06.2015–07.2016"
+      position: "Specjalista ds. Rozwoju Nowych Produktow"
+      company: "Coveris Rigid Poland"
+      technologies: "SolidWorks, Excel, CAD/CAE"
+      details:
+        - "Wspolpraca z zespolem sprzedazy i klientami przy wprowadzaniu nowych produktow na rynek."
+        - "Scisla koordynacja z dzialem produkcji i jakosci, zapewnienie wysokiej jakosci produktow."
+        - "Kontrola linii produkcyjnych klienta, plynne wdrozenie nowych projektow."
+  skills:
+    - name: "Java i Spring Boot"
+      description: "Ponad 3 lata tworzenia aplikacji i uslug backendowych w roznych domenach."
+    - name: "Kubernetes i Azure Cloud"
+      description: "2 lata budowy skalowalnych systemow rozproszonych w architekturze cloud-native."
+    - name: "Zarzadzanie projektami"
+      description: "Certyfikat PMP z doswiadczeniem w prowadzeniu zespolow i projektow $1M+."
+    - name: "Agile i Scrum"
+      description: "Doswiadczenie w srodowiskach Agile, planowaniu sprintow i retrospektywach."
+    - name: "Analiza wymagan"
+      description: "Przekladanie potrzeb biznesowych na specyfikacje techniczne i user stories."
+    - name: "Komunikacja z interesariuszami"
+      description: "Laczenie zespolow technicznych i interesariuszy biznesowych w roznych domenach."
+    - name: "SQL (Postgres, CosmosDB)"
+      description: "Projektowanie baz danych, optymalizacja zapytan i modelowanie danych."
+    - name: "Python"
+      description: "Tworzenie skryptow automatyzacji, narzedzi CI/CD i aplikacji pomocniczych."
+    - name: "Jira, Confluence, MS Project"
+      description: "Bieglosc w narzdziach do sledzenia projektow, dokumentacji i wspolpracy."
+    - name: "Rozwiazywanie problemow"
+      description: "Systematyczne podejscie do identyfikacji i rozwiazywania zlozonych problemow technicznych i organizacyjnych."
+  skills_other: "Inne: Docker, JUnit, Jenkins, GitHub Actions, REST API, GraphQL, LLM, prompt engineering, HTML, CSS, Excel, Office"
+  certifications:
+    - name: "PMP (Project Management Professional)"
+      org: "Project Management Institute"
+      year: "2016 (Active)"
+  education:
+    - year: "2015"
+      detail: "Metody Elementow Skonczonych – CAD/CAE"
+      org: "Politechnika Swietokrzyska"
+    - year: "2016"
+      detail: "PM Academy"
+      org: "PM Institute"
+    - year: "2017"
+      detail: "Metody i narzedzia zarzadzania projektami"
+      org: "Uniwersytet Ekonomiczny w Katowicach"
+    - year: "2019"
+      detail: "Java Developer Web – Bootcamp"
+      org: "CodersLab"
+  languages:
+    - name: "Angielski"
+      level: "Biegla znajomosc – C1"
+    - name: "Polski"
+      level: "Jezyk ojczysty"
+  disabilities:
+    - name: "Stopien"
+      level: "Umiarkowany"
+  projects:
+    - years: "05.2022–03.2023"
+      title: "Aplikacja medyczna dla Big Pharma"
+      position: "Inzynier Oprogramowania Java @ EPAM"
+      budget: null
+      team_size: "10 specjalistow"
+      technology: "Java, Kubernetes, Azure"
+      intro: "Integracja systemow technicznych mikroserwisowej aplikacji do monitorowania zdrowia i aktywnosci opiekunow."
+      role: >
+        Czesc miedzynarodowego, wielofunkcyjnego zespolu dostarczajacego szybko wdrazana
+        aplikacje majaca zrewolucjonizowac rynek opieki w USA. Pracowalem nad warstwa komunikacji
+        w zespole Scrum (10 specjalistow), budujac mikroserwisy i komponenty integracyjne
+        w architekturze chmurowej.
+    - years: "01.2020–10.2021"
+      title: "Aplikacja do obiegu dokumentow"
+      position: "Mlodszy Programista Java @ Asseco DS"
+      budget: null
+      team_size: "12 deweloperow"
+      technology: "Java, Postgres, JavaScript"
+      intro: "Utrzymanie i rozwoj aplikacji do obiegu dokumentow dla instytucji rzadowych i sektora publicznego."
+      role: >
+        W malym i zwinnym zespole deweloperow pracowalem nad frontendem i backendem aplikacji.
+        Skupialem sie na poprawianiu bledow i dodawaniu funkcji na podstawie licznych zgloszen klientow.
+        Byla to moja pierwsza rola zawodowa jako programista, skoncentrowana na budowaniu solidnych podstaw kodowania.
+    - years: "08.2016–06.2017"
+      title: "Integracja urzadzen przemyslowych"
+      position: "Kierownik Projektow @ Coveris"
+      budget: "$1M+"
+      team_size: "15+ osob, 5 dzialow"
+      technology: "MS Project, SharePoint, Przywodztwo"
+      intro: "Prowadzenie integracji nowych urzadzen przemyslowych w zakladzie produkcyjnym."
+      role: >
+        Po pracy jako specjalista NPD awansowalem na PM. Przejalem projekt poczatkowo realizowany bez nadzoru.
+        Szybko zbudowalem wiedze i zorganizowalem wspolprace miedzy dzialami, aby spelnic oczekiwania interesariuszy.
+        Zidentyfikowalem kilka istotnych ryzyk i rozwiazalem je w napietym harmonogramie, dostarczajac z sukcesem w budzecie.
