@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open Sans:400,500,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,500,600,700,800');
+@font-face { font-family: "Open Sans"; font-weight: 400; src: url("../webfonts/opensans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 500; src: url("../webfonts/opensans/OpenSans-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 600; src: url("../webfonts/opensans/OpenSans-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 700; src: url("../webfonts/opensans/OpenSans-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; font-weight: 800; src: url("../webfonts/opensans/OpenSans-ExtraBold.ttf") format("truetype"); }
+@font-face { font-family: "Lora"; font-weight: 400; src: url("../webfonts/lora/Lora-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Lora"; font-weight: 500; src: url("../webfonts/lora/Lora-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Lora"; font-weight: 600; src: url("../webfonts/lora/Lora-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Lora"; font-weight: 700; src: url("../webfonts/lora/Lora-Bold.ttf") format("truetype"); }
 
 @font-face {
     font-family: "Font Awesome 6 Free";
@@ -463,7 +470,7 @@ ul {
     }
 
     #profile-picture {
-        width: 140px;
+        width: 100px;
     }
 
     #pageHeader {

@@ -71,8 +71,10 @@ class PDFService:
         async with self.semaphore:
             page = await self.browser.new_page()
             try:
-                await page.goto(f"http://localhost:{STATIC_PORT}/cv_yaml.html")
-                await page.wait_for_selector("#cv-container")
+                await page.goto(
+                    f"http://localhost:{STATIC_PORT}/cv_yaml.html",
+                    wait_until="networkidle",
+                )
 
                 await page.evaluate(
                     """([data, lang]) => {
@@ -84,6 +86,9 @@ class PDFService:
                 )
 
                 await page.wait_for_selector("#cv")
+                await page.wait_for_function(
+                    "document.querySelector('#profile-picture')?.complete === true"
+                )
 
                 pdf_bytes = await page.pdf(
                     format="A4",
@@ -105,13 +110,13 @@ pdf_service = PDFService()
 
 
 @asynccontextmanager
-async def lifespan():
+async def lifespan(app: FastAPI):
     await pdf_service.start()
     yield
     await pdf_service.stop()
 
 
-app = FastAPI(title="CV PDF Generator API")
+app = FastAPI(title="CV PDF Generator API", lifespan=lifespan)
 
 
 @app.get("/health")
